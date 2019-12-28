@@ -19,23 +19,45 @@ public class NicoCommonsClient {
     }
     
     public func searchAudio() {
-        var urlComponents = URLComponents(string: 'http://commons.nicovideo.jp/search/material/audio')
+        print("searchAudio")
+        /// これはエラーにならないはずなので ! してしまう
+        var urlComponents = URLComponents(string: "https://commons.nicovideo.jp/search/material/audio")!
         let queryItems = [
             URLQueryItem(name: Sort.name, value: Sort.createdAt),
             URLQueryItem(name: Order.name, value: Order.desc),
         ]
+        urlComponents.queryItems = queryItems
+        
+        /// エラーにならないはずなので ! してしまう
+        let request = URLRequest(url: urlComponents.url!)
+        print("request!")
+        print(request)
+        let task = self.urlSession.dataTask(with: request) { (data, urlResponse, error) in
+            print("task result")
+            guard let data = data else {
+                print("Request Error")
+                return
+            }
+            print(data)
+        }
+        task.resume()
     }
 }
 
 struct Sort {
     /// sort をクエリで指定するときの key
-    static let name = 's'
+    static let name = "s"
+    
     /// 登録順
-    static let createdAt = 'c'
+    static let createdAt = "c"
 }
 
 struct Order {
-    static let name = 'o'
-    static let asc = 'a'
-    static let desc = 'd'
+    /// order をクエリで指定する時の key
+    static let name = "o"
+    
+    /// 昇順
+    static let asc = "a"
+    /// 降順
+    static let desc = "d"
 }
