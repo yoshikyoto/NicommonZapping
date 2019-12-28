@@ -3,12 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		543512A92B226914FDEB5022 /* Pods_NicommonZapping_NicommonZappingUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E80B2180D3D9A655C9EAFF4D /* Pods_NicommonZapping_NicommonZappingUITests.framework */; };
-		55A0B40723B7661D0062A60C /* NicoCommonsParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A0B40623B7661D0062A60C /* NicoCommonsParser.swift */; };
 		55CCD89923B2F2AA007F9F1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CCD89823B2F2AA007F9F1C /* AppDelegate.swift */; };
 		55CCD89B23B2F2AA007F9F1C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CCD89A23B2F2AA007F9F1C /* SceneDelegate.swift */; };
 		55CCD89D23B2F2AA007F9F1C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CCD89C23B2F2AA007F9F1C /* ContentView.swift */; };
@@ -44,7 +43,6 @@
 		2E14AAFADBE5B396C0CCE45E /* Pods-NicommonZappingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NicommonZappingTests.release.xcconfig"; path = "Target Support Files/Pods-NicommonZappingTests/Pods-NicommonZappingTests.release.xcconfig"; sourceTree = "<group>"; };
 		2F8C1A3542D7C4FA497C52C7 /* Pods-NicommonZappingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NicommonZappingTests.debug.xcconfig"; path = "Target Support Files/Pods-NicommonZappingTests/Pods-NicommonZappingTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3C26D4CB7C0B7CAFF6709078 /* Pods_NicommonZapping.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NicommonZapping.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		55A0B40623B7661D0062A60C /* NicoCommonsParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NicoCommonsParser.swift; sourceTree = "<group>"; };
 		55CCD89523B2F2AA007F9F1C /* NicommonZapping.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NicommonZapping.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55CCD89823B2F2AA007F9F1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55CCD89A23B2F2AA007F9F1C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -172,7 +170,6 @@
 			isa = PBXGroup;
 			children = (
 				55CCD8C923B2FC25007F9F1C /* NicoCommonsClient.swift */,
-				55A0B40623B7661D0062A60C /* NicoCommonsParser.swift */,
 			);
 			path = Niconico;
 			sourceTree = "<group>";
@@ -396,7 +393,6 @@
 				55CCD89923B2F2AA007F9F1C /* AppDelegate.swift in Sources */,
 				55CCD89B23B2F2AA007F9F1C /* SceneDelegate.swift in Sources */,
 				55CCD8CA23B2FC25007F9F1C /* NicoCommonsClient.swift in Sources */,
-				55A0B40723B7661D0062A60C /* NicoCommonsParser.swift in Sources */,
 				55CCD89D23B2F2AA007F9F1C /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
