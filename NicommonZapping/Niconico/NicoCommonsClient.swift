@@ -1,21 +1,15 @@
-
-//
-//  NicoCommonsApi.swift
-//  NicommonZapping
-//
-//  Created by 坂本　祥之　 on 2019/12/25.
-//  Copyright © 2019 yoshikyoto. All rights reserved.
-//
-
 import Foundation
 
 public class NicoCommonsClient {
     let urlSession: URLSession
+    let parser: NicoCommonsParser
     
     public init(
-        urlSession: URLSession = URLSession.shared
+        urlSession: URLSession = URLSession.shared,
+        parser: NicoCommonsParser = NicoCommonsParser()
     ) {
         self.urlSession = urlSession
+        self.parser = parser
     }
     
     public func searchAudio() {
@@ -38,7 +32,9 @@ public class NicoCommonsClient {
                 print("Request Error")
                 return
             }
+            print("success")
             print(data)
+            self.parser.parse(data: data)
         }
         task.resume()
     }

@@ -3,39 +3,22 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0CCE78A350FBB2A1214CD85C330EFAD5 /* Pods-NicommonZappingTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 207B8981E10F58A1F77B0B2260035C51 /* Pods-NicommonZappingTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		183ED56ED5A304D31BF95FB4FF100E09 /* libxmlHTMLNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C925A835AA4A90FD83B12136E5C54356 /* libxmlHTMLNode.swift */; };
-		1F5E8CC0E12AED9DEF1FA149713B3D29 /* Kanna-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F90F805728F40C7FD72D311000C1658 /* Kanna-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		309B140929A989B587F526191791761F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		30CFDA9B88F52CB26E68BA9943265627 /* Pods-NicommonZapping-NicommonZappingUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ABC39DED44B6FF342278DC0C12EE9152 /* Pods-NicommonZapping-NicommonZappingUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0CCE78A350FBB2A1214CD85C330EFAD5 /* Pods-NicommonZappingTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 35970A5442E043B4655CAC2EF08CF470 /* Pods-NicommonZappingTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		342523FACA41295308EE350D26CC5F43 /* Pods-NicommonZapping-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ED7B3BFC3B436F5D8AB5F3D9BE2314D /* Pods-NicommonZapping-dummy.m */; };
 		372D2F98E967B615F5FF6EBA54F1C6A9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		4931A0D52921C13D6BE42385AB5F9A62 /* CSS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B501FFCA8AA07902B3EE3620AC29BA /* CSS.swift */; };
-		5649DC8F3E785DB6136A408EAE854679 /* libxmlParserOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6DF13E6E28276EAE764CD3160D1FBB /* libxmlParserOption.swift */; };
-		713679F510BE0BF69B3B198C0199C469 /* libxmlHTMLDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B6C9AF8AA33180DB3E27ED31E32333 /* libxmlHTMLDocument.swift */; };
-		76CF693EADEBBF6C61ADE1675E8496E2 /* Pods-NicommonZappingTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A2AC25DCF0FE9B7D330D5DFC83CA527 /* Pods-NicommonZappingTests-dummy.m */; };
-		98A80A975711A029440E5197142990E9 /* Kanna.h in Headers */ = {isa = PBXBuildFile; fileRef = B665B05D51C2E8EBBF63D60BE235CBF4 /* Kanna.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9F1523B4EDB43ABF65ADB49E3CDB823F /* Kanna-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B48E87DAB49E6284F115BFB6947BFECE /* Kanna-dummy.m */; };
-		C2709B5CF0D73D86A5CD609EAEB58FE8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		C3E9AD71E3B4E9F4A0E4A412CFD6B8F6 /* Pods-NicommonZapping-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 996A993E2275E98235243F38797F630E /* Pods-NicommonZapping-dummy.m */; };
-		C414C055E9CD3328226A5404D384EB0D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		C9BE9617EFABC5E589FADF6F81B08EEE /* Kanna.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081CFC7A54EE3C57396CC5A8D3B54D78 /* Kanna.swift */; };
-		CF3D63BEE58047D9F475D4DC49C55FDE /* Pods-NicommonZapping-NicommonZappingUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 20166C0FDF72721F83E9AB9ECD5EE9C9 /* Pods-NicommonZapping-NicommonZappingUITests-dummy.m */; };
-		E428A08169508F6A3BEA163771E3DE5B /* Pods-NicommonZapping-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A90EAB144420C4583265BD77AE2A0EA /* Pods-NicommonZapping-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EC33DD6EFB5A6494B059FD762316B939 /* Deprecated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F70E12BF091CD5D90E7B93131A77A90 /* Deprecated.swift */; };
+		6641A3B459C213F35B0D19F7A83D525E /* Pods-NicommonZapping-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 895AB8F34A7E5DA982849B43F8B94DFD /* Pods-NicommonZapping-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6EDB0050E3AA7C93C054A1FE1D3483B5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		76CF693EADEBBF6C61ADE1675E8496E2 /* Pods-NicommonZappingTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D45C6A62F2E820F70E12D054D9002768 /* Pods-NicommonZappingTests-dummy.m */; };
+		A62300BC068E3552C60AF40473261BE6 /* Pods-NicommonZapping-NicommonZappingUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F12F7574A77B2A01EE102AA4222EC20D /* Pods-NicommonZapping-NicommonZappingUITests-dummy.m */; };
+		B21B8C7BDAAACDFFFCA3142AF99C5204 /* Pods-NicommonZapping-NicommonZappingUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FACC46E9CD9640A4EC5957FD1A1C0D0E /* Pods-NicommonZapping-NicommonZappingUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C221B55E15C37B2095802FA890289979 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0CE91897D8DA16342D0495FF40569221 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 93AC747EDE1EE56F89BBF405C1D67027;
-			remoteInfo = Kanna;
-		};
 		2A4646ACC4C66018A4C2A846766F2E5A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -43,61 +26,38 @@
 			remoteGlobalIDString = 3B8882D3A540F353E3119A61718C96DC;
 			remoteInfo = "Pods-NicommonZapping";
 		};
-		72F617360A6CBEF301896265F6F3B655 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 93AC747EDE1EE56F89BBF405C1D67027;
-			remoteInfo = Kanna;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		023C76AE39EF9D30FD3F7899B55FF884 /* Pods-NicommonZapping.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NicommonZapping.release.xcconfig"; sourceTree = "<group>"; };
+		02C9626D031E15DB313AE96415C85954 /* Pods-NicommonZappingTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NicommonZappingTests-Info.plist"; sourceTree = "<group>"; };
 		0410DC7130C86C20EC811BA750398317 /* Pods_NicommonZapping_NicommonZappingUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NicommonZapping_NicommonZappingUITests.framework; path = "Pods-NicommonZapping-NicommonZappingUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		06B501FFCA8AA07902B3EE3620AC29BA /* CSS.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CSS.swift; path = Sources/Kanna/CSS.swift; sourceTree = "<group>"; };
-		06FA76397971902571DB82FE44377D9D /* Kanna.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Kanna.xcconfig; sourceTree = "<group>"; };
-		07B6C9AF8AA33180DB3E27ED31E32333 /* libxmlHTMLDocument.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = libxmlHTMLDocument.swift; path = Sources/Kanna/libxmlHTMLDocument.swift; sourceTree = "<group>"; };
-		081CFC7A54EE3C57396CC5A8D3B54D78 /* Kanna.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Kanna.swift; path = Sources/Kanna/Kanna.swift; sourceTree = "<group>"; };
-		0B12B57616A097D08836EBD32C04A0F3 /* Pods-NicommonZapping-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NicommonZapping-acknowledgements.plist"; sourceTree = "<group>"; };
-		0D6B3FBD5F9F0A70DA09D3471E853A4E /* Pods-NicommonZappingTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NicommonZappingTests-Info.plist"; sourceTree = "<group>"; };
-		17430A3D1D0AE024A306BD7143AC39E4 /* Pods-NicommonZapping-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NicommonZapping-Info.plist"; sourceTree = "<group>"; };
-		1F70E12BF091CD5D90E7B93131A77A90 /* Deprecated.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Deprecated.swift; path = Sources/Kanna/Deprecated.swift; sourceTree = "<group>"; };
-		20166C0FDF72721F83E9AB9ECD5EE9C9 /* Pods-NicommonZapping-NicommonZappingUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NicommonZapping-NicommonZappingUITests-dummy.m"; sourceTree = "<group>"; };
-		201D338CD98EF781058D6A66AE57C1A2 /* Pods-NicommonZapping-NicommonZappingUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NicommonZapping-NicommonZappingUITests-Info.plist"; sourceTree = "<group>"; };
-		202CF911104C898FAD7A37C5894AE280 /* Pods-NicommonZapping-NicommonZappingUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NicommonZapping-NicommonZappingUITests.release.xcconfig"; sourceTree = "<group>"; };
-		207B8981E10F58A1F77B0B2260035C51 /* Pods-NicommonZappingTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NicommonZappingTests-umbrella.h"; sourceTree = "<group>"; };
-		275668E46CD22CC21B62C049DE94AB24 /* Kanna-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Kanna-Info.plist"; sourceTree = "<group>"; };
+		059F58D426C324ACE49F4917CC443664 /* Pods-NicommonZappingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NicommonZappingTests.release.xcconfig"; sourceTree = "<group>"; };
+		124F7EBD1A6A53F03225F4811629FC4E /* Pods-NicommonZappingTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NicommonZappingTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		1BD28C428B1C755454FE522A649EC6B2 /* Pods-NicommonZapping.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NicommonZapping.modulemap"; sourceTree = "<group>"; };
+		1F3F4A0F4A0AC429BF56904DB491EF9A /* Pods-NicommonZapping-NicommonZappingUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NicommonZapping-NicommonZappingUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		22F7E4B0D8ED8AEAF914E7B4D936FC34 /* Pods-NicommonZapping-NicommonZappingUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NicommonZapping-NicommonZappingUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		3AB734EBF494B9386AE4ED982E0A11C0 /* Pods-NicommonZapping.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NicommonZapping.debug.xcconfig"; sourceTree = "<group>"; };
-		3ABC1CA050E5AA64AC502557BF7AB617 /* Kanna.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Kanna.modulemap; sourceTree = "<group>"; };
+		35970A5442E043B4655CAC2EF08CF470 /* Pods-NicommonZappingTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NicommonZappingTests-umbrella.h"; sourceTree = "<group>"; };
+		39F4D30AB9AA8C2D7ACEF494B7D73CCA /* Pods-NicommonZappingTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NicommonZappingTests.modulemap"; sourceTree = "<group>"; };
 		3BC31403D67B841DC51DEFEEC1784E74 /* Pods_NicommonZappingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NicommonZappingTests.framework; path = "Pods-NicommonZappingTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3C6DF13E6E28276EAE764CD3160D1FBB /* libxmlParserOption.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = libxmlParserOption.swift; path = Sources/Kanna/libxmlParserOption.swift; sourceTree = "<group>"; };
-		3CDF04932F66B9C9A280F553C672C19D /* Pods-NicommonZappingTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NicommonZappingTests.modulemap"; sourceTree = "<group>"; };
-		3EA922F9B70178D64EE578C60F4DD23B /* Kanna.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Kanna.framework; path = Kanna.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		450B5584D4208A46893571964FEB0D78 /* Pods-NicommonZapping-NicommonZappingUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NicommonZapping-NicommonZappingUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		4661AFBEF0411BB7471FE61C30F31DA7 /* Pods-NicommonZapping.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NicommonZapping.modulemap"; sourceTree = "<group>"; };
-		48D13F1B8AD386F9BCCF2CD6F949A593 /* Pods-NicommonZapping-NicommonZappingUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NicommonZapping-NicommonZappingUITests-frameworks.sh"; sourceTree = "<group>"; };
-		6F90F805728F40C7FD72D311000C1658 /* Kanna-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Kanna-umbrella.h"; sourceTree = "<group>"; };
-		6F978057212DFD077C0943672432C3AF /* Pods-NicommonZapping-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NicommonZapping-acknowledgements.markdown"; sourceTree = "<group>"; };
-		79CD05C0AF506CF0BEAA69BE5D4EED51 /* Pods-NicommonZapping-NicommonZappingUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NicommonZapping-NicommonZappingUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		7C457242B80A1E8A38F8C54FA9D82C5C /* Pods-NicommonZappingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NicommonZappingTests.release.xcconfig"; sourceTree = "<group>"; };
-		8A2AC25DCF0FE9B7D330D5DFC83CA527 /* Pods-NicommonZappingTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NicommonZappingTests-dummy.m"; sourceTree = "<group>"; };
-		8A90EAB144420C4583265BD77AE2A0EA /* Pods-NicommonZapping-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NicommonZapping-umbrella.h"; sourceTree = "<group>"; };
-		8F5C7F51BE5D4342B1FD73EA5EDF1464 /* Pods-NicommonZappingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NicommonZappingTests.debug.xcconfig"; sourceTree = "<group>"; };
-		996A993E2275E98235243F38797F630E /* Pods-NicommonZapping-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NicommonZapping-dummy.m"; sourceTree = "<group>"; };
-		999D8A41FF7F4C5D89A0680AA8204AF1 /* Pods-NicommonZapping-NicommonZappingUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NicommonZapping-NicommonZappingUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		47DAE9EBC0256946B0E2AA51266D1AD5 /* Pods-NicommonZapping.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NicommonZapping.debug.xcconfig"; sourceTree = "<group>"; };
+		4CB2CE81B15561B8172641D7F1D2ED43 /* Pods-NicommonZapping-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NicommonZapping-Info.plist"; sourceTree = "<group>"; };
+		5ED7B3BFC3B436F5D8AB5F3D9BE2314D /* Pods-NicommonZapping-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NicommonZapping-dummy.m"; sourceTree = "<group>"; };
+		883285CDE9024D89B65A7844C54DB28D /* Pods-NicommonZapping-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NicommonZapping-acknowledgements.plist"; sourceTree = "<group>"; };
+		895AB8F34A7E5DA982849B43F8B94DFD /* Pods-NicommonZapping-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NicommonZapping-umbrella.h"; sourceTree = "<group>"; };
+		99EB672BC749B6EA9FB70FC253A6905F /* Pods-NicommonZapping-NicommonZappingUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NicommonZapping-NicommonZappingUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9FBC13FEB6A8F35ECC44C9FA68C6696A /* Pods-NicommonZapping.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NicommonZapping.release.xcconfig"; sourceTree = "<group>"; };
-		ABC39DED44B6FF342278DC0C12EE9152 /* Pods-NicommonZapping-NicommonZappingUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NicommonZapping-NicommonZappingUITests-umbrella.h"; sourceTree = "<group>"; };
-		B48E87DAB49E6284F115BFB6947BFECE /* Kanna-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Kanna-dummy.m"; sourceTree = "<group>"; };
-		B665B05D51C2E8EBBF63D60BE235CBF4 /* Kanna.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Kanna.h; path = Sources/Kanna/Kanna.h; sourceTree = "<group>"; };
-		B94F370E94491A4E037052D421638A94 /* Kanna-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Kanna-prefix.pch"; sourceTree = "<group>"; };
-		C799B492ED39DF6670AB0BD44820B797 /* Pods-NicommonZapping-NicommonZappingUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NicommonZapping-NicommonZappingUITests.modulemap"; sourceTree = "<group>"; };
-		C925A835AA4A90FD83B12136E5C54356 /* libxmlHTMLNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = libxmlHTMLNode.swift; path = Sources/Kanna/libxmlHTMLNode.swift; sourceTree = "<group>"; };
-		F1ADDA1FB8E70B8BFD589A900AC0A002 /* Pods-NicommonZapping-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NicommonZapping-frameworks.sh"; sourceTree = "<group>"; };
-		F238885B733B0DD10E53DCD390C30770 /* Pods-NicommonZappingTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NicommonZappingTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		A8E3FCF0B65EF9596E713D9B6686B030 /* Pods-NicommonZapping-NicommonZappingUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NicommonZapping-NicommonZappingUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B65A38F294C42CEE52C5BDD3661CCDB7 /* Pods-NicommonZapping-NicommonZappingUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NicommonZapping-NicommonZappingUITests.modulemap"; sourceTree = "<group>"; };
+		D45C6A62F2E820F70E12D054D9002768 /* Pods-NicommonZappingTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NicommonZappingTests-dummy.m"; sourceTree = "<group>"; };
+		D6F5634A73CD9260CB0AF5281F122865 /* Pods-NicommonZappingTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NicommonZappingTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E27CF882481149B19464FD816014DE10 /* Pods-NicommonZappingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NicommonZappingTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F12F7574A77B2A01EE102AA4222EC20D /* Pods-NicommonZapping-NicommonZappingUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NicommonZapping-NicommonZappingUITests-dummy.m"; sourceTree = "<group>"; };
 		F5B7F0D9D1BC7B998D6E0F23926C434C /* Pods_NicommonZapping.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NicommonZapping.framework; path = "Pods-NicommonZapping.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F6DD2ACF3DE5E9A8128593A3BDD46BB5 /* Pods-NicommonZappingTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NicommonZappingTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F84778914895479300C14FB86655D2FB /* Pods-NicommonZapping-NicommonZappingUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NicommonZapping-NicommonZappingUITests-Info.plist"; sourceTree = "<group>"; };
+		FACC46E9CD9640A4EC5957FD1A1C0D0E /* Pods-NicommonZapping-NicommonZappingUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NicommonZapping-NicommonZappingUITests-umbrella.h"; sourceTree = "<group>"; };
+		FDFF6E29DC59A0A6164503A0B48AE05D /* Pods-NicommonZapping-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NicommonZapping-acknowledgements.markdown"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,140 +69,91 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		247E728C629DF2351E883B78831923F5 /* Frameworks */ = {
+		93C019667E0CE0AFF00E1D0CCB1406AD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2709B5CF0D73D86A5CD609EAEB58FE8 /* Foundation.framework in Frameworks */,
+				6EDB0050E3AA7C93C054A1FE1D3483B5 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6ABABCBC04DA67C848F44B6781F2AAAA /* Frameworks */ = {
+		D84B0A6904B45E0EF2FD4D6063132C93 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				309B140929A989B587F526191791761F /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BD040212932C464BD48E25437FBFD03C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C414C055E9CD3328226A5404D384EB0D /* Foundation.framework in Frameworks */,
+				C221B55E15C37B2095802FA890289979 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00A13C36AEDBF02CB318447FD79257A8 /* Pods-NicommonZappingTests */ = {
+		1D3ED2DCBF42F800EBCA2E3835C22311 /* Pods-NicommonZapping-NicommonZappingUITests */ = {
 			isa = PBXGroup;
 			children = (
-				3CDF04932F66B9C9A280F553C672C19D /* Pods-NicommonZappingTests.modulemap */,
-				F6DD2ACF3DE5E9A8128593A3BDD46BB5 /* Pods-NicommonZappingTests-acknowledgements.markdown */,
-				F238885B733B0DD10E53DCD390C30770 /* Pods-NicommonZappingTests-acknowledgements.plist */,
-				8A2AC25DCF0FE9B7D330D5DFC83CA527 /* Pods-NicommonZappingTests-dummy.m */,
-				0D6B3FBD5F9F0A70DA09D3471E853A4E /* Pods-NicommonZappingTests-Info.plist */,
-				207B8981E10F58A1F77B0B2260035C51 /* Pods-NicommonZappingTests-umbrella.h */,
-				8F5C7F51BE5D4342B1FD73EA5EDF1464 /* Pods-NicommonZappingTests.debug.xcconfig */,
-				7C457242B80A1E8A38F8C54FA9D82C5C /* Pods-NicommonZappingTests.release.xcconfig */,
-			);
-			name = "Pods-NicommonZappingTests";
-			path = "Target Support Files/Pods-NicommonZappingTests";
-			sourceTree = "<group>";
-		};
-		0A7E9ECB7C0CFD150D7AFCA63E0652F7 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				3ABC1CA050E5AA64AC502557BF7AB617 /* Kanna.modulemap */,
-				06FA76397971902571DB82FE44377D9D /* Kanna.xcconfig */,
-				B48E87DAB49E6284F115BFB6947BFECE /* Kanna-dummy.m */,
-				275668E46CD22CC21B62C049DE94AB24 /* Kanna-Info.plist */,
-				B94F370E94491A4E037052D421638A94 /* Kanna-prefix.pch */,
-				6F90F805728F40C7FD72D311000C1658 /* Kanna-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Kanna";
-			sourceTree = "<group>";
-		};
-		2934F7055E5902967CBFE2D38990E38D /* Kanna */ = {
-			isa = PBXGroup;
-			children = (
-				06B501FFCA8AA07902B3EE3620AC29BA /* CSS.swift */,
-				1F70E12BF091CD5D90E7B93131A77A90 /* Deprecated.swift */,
-				B665B05D51C2E8EBBF63D60BE235CBF4 /* Kanna.h */,
-				081CFC7A54EE3C57396CC5A8D3B54D78 /* Kanna.swift */,
-				07B6C9AF8AA33180DB3E27ED31E32333 /* libxmlHTMLDocument.swift */,
-				C925A835AA4A90FD83B12136E5C54356 /* libxmlHTMLNode.swift */,
-				3C6DF13E6E28276EAE764CD3160D1FBB /* libxmlParserOption.swift */,
-				0A7E9ECB7C0CFD150D7AFCA63E0652F7 /* Support Files */,
-			);
-			name = Kanna;
-			path = Kanna;
-			sourceTree = "<group>";
-		};
-		31660038A48EA5F471663966436524E8 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				2934F7055E5902967CBFE2D38990E38D /* Kanna */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		4B7FB51D3D12DCFBE47EBA866F02A9A2 /* Pods-NicommonZapping-NicommonZappingUITests */ = {
-			isa = PBXGroup;
-			children = (
-				C799B492ED39DF6670AB0BD44820B797 /* Pods-NicommonZapping-NicommonZappingUITests.modulemap */,
-				999D8A41FF7F4C5D89A0680AA8204AF1 /* Pods-NicommonZapping-NicommonZappingUITests-acknowledgements.markdown */,
-				450B5584D4208A46893571964FEB0D78 /* Pods-NicommonZapping-NicommonZappingUITests-acknowledgements.plist */,
-				20166C0FDF72721F83E9AB9ECD5EE9C9 /* Pods-NicommonZapping-NicommonZappingUITests-dummy.m */,
-				48D13F1B8AD386F9BCCF2CD6F949A593 /* Pods-NicommonZapping-NicommonZappingUITests-frameworks.sh */,
-				201D338CD98EF781058D6A66AE57C1A2 /* Pods-NicommonZapping-NicommonZappingUITests-Info.plist */,
-				ABC39DED44B6FF342278DC0C12EE9152 /* Pods-NicommonZapping-NicommonZappingUITests-umbrella.h */,
-				79CD05C0AF506CF0BEAA69BE5D4EED51 /* Pods-NicommonZapping-NicommonZappingUITests.debug.xcconfig */,
-				202CF911104C898FAD7A37C5894AE280 /* Pods-NicommonZapping-NicommonZappingUITests.release.xcconfig */,
+				B65A38F294C42CEE52C5BDD3661CCDB7 /* Pods-NicommonZapping-NicommonZappingUITests.modulemap */,
+				22F7E4B0D8ED8AEAF914E7B4D936FC34 /* Pods-NicommonZapping-NicommonZappingUITests-acknowledgements.markdown */,
+				1F3F4A0F4A0AC429BF56904DB491EF9A /* Pods-NicommonZapping-NicommonZappingUITests-acknowledgements.plist */,
+				F12F7574A77B2A01EE102AA4222EC20D /* Pods-NicommonZapping-NicommonZappingUITests-dummy.m */,
+				F84778914895479300C14FB86655D2FB /* Pods-NicommonZapping-NicommonZappingUITests-Info.plist */,
+				FACC46E9CD9640A4EC5957FD1A1C0D0E /* Pods-NicommonZapping-NicommonZappingUITests-umbrella.h */,
+				99EB672BC749B6EA9FB70FC253A6905F /* Pods-NicommonZapping-NicommonZappingUITests.debug.xcconfig */,
+				A8E3FCF0B65EF9596E713D9B6686B030 /* Pods-NicommonZapping-NicommonZappingUITests.release.xcconfig */,
 			);
 			name = "Pods-NicommonZapping-NicommonZappingUITests";
 			path = "Target Support Files/Pods-NicommonZapping-NicommonZappingUITests";
 			sourceTree = "<group>";
 		};
-		646C1ED2803771E98BBF879A11C601FD /* Products */ = {
+		20CEC069ECFEB010034A0DF0465D62BF /* Pods-NicommonZapping */ = {
 			isa = PBXGroup;
 			children = (
-				3EA922F9B70178D64EE578C60F4DD23B /* Kanna.framework */,
-				F5B7F0D9D1BC7B998D6E0F23926C434C /* Pods_NicommonZapping.framework */,
-				0410DC7130C86C20EC811BA750398317 /* Pods_NicommonZapping_NicommonZappingUITests.framework */,
-				3BC31403D67B841DC51DEFEEC1784E74 /* Pods_NicommonZappingTests.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		8CA37C6FF80DCBFE3F149CD6AA067E82 /* Pods-NicommonZapping */ = {
-			isa = PBXGroup;
-			children = (
-				4661AFBEF0411BB7471FE61C30F31DA7 /* Pods-NicommonZapping.modulemap */,
-				6F978057212DFD077C0943672432C3AF /* Pods-NicommonZapping-acknowledgements.markdown */,
-				0B12B57616A097D08836EBD32C04A0F3 /* Pods-NicommonZapping-acknowledgements.plist */,
-				996A993E2275E98235243F38797F630E /* Pods-NicommonZapping-dummy.m */,
-				F1ADDA1FB8E70B8BFD589A900AC0A002 /* Pods-NicommonZapping-frameworks.sh */,
-				17430A3D1D0AE024A306BD7143AC39E4 /* Pods-NicommonZapping-Info.plist */,
-				8A90EAB144420C4583265BD77AE2A0EA /* Pods-NicommonZapping-umbrella.h */,
-				3AB734EBF494B9386AE4ED982E0A11C0 /* Pods-NicommonZapping.debug.xcconfig */,
-				9FBC13FEB6A8F35ECC44C9FA68C6696A /* Pods-NicommonZapping.release.xcconfig */,
+				1BD28C428B1C755454FE522A649EC6B2 /* Pods-NicommonZapping.modulemap */,
+				FDFF6E29DC59A0A6164503A0B48AE05D /* Pods-NicommonZapping-acknowledgements.markdown */,
+				883285CDE9024D89B65A7844C54DB28D /* Pods-NicommonZapping-acknowledgements.plist */,
+				5ED7B3BFC3B436F5D8AB5F3D9BE2314D /* Pods-NicommonZapping-dummy.m */,
+				4CB2CE81B15561B8172641D7F1D2ED43 /* Pods-NicommonZapping-Info.plist */,
+				895AB8F34A7E5DA982849B43F8B94DFD /* Pods-NicommonZapping-umbrella.h */,
+				47DAE9EBC0256946B0E2AA51266D1AD5 /* Pods-NicommonZapping.debug.xcconfig */,
+				023C76AE39EF9D30FD3F7899B55FF884 /* Pods-NicommonZapping.release.xcconfig */,
 			);
 			name = "Pods-NicommonZapping";
 			path = "Target Support Files/Pods-NicommonZapping";
 			sourceTree = "<group>";
 		};
-		B8E808D0AFC578E4D89C4DEB2A233821 /* Targets Support Files */ = {
+		3A23BE76234B3A8BB9616798B8544A44 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				8CA37C6FF80DCBFE3F149CD6AA067E82 /* Pods-NicommonZapping */,
-				4B7FB51D3D12DCFBE47EBA866F02A9A2 /* Pods-NicommonZapping-NicommonZappingUITests */,
-				00A13C36AEDBF02CB318447FD79257A8 /* Pods-NicommonZappingTests */,
+				20CEC069ECFEB010034A0DF0465D62BF /* Pods-NicommonZapping */,
+				1D3ED2DCBF42F800EBCA2E3835C22311 /* Pods-NicommonZapping-NicommonZappingUITests */,
+				81F0A50AF86B4AB0B99FFA7B630C7226 /* Pods-NicommonZappingTests */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		81F0A50AF86B4AB0B99FFA7B630C7226 /* Pods-NicommonZappingTests */ = {
+			isa = PBXGroup;
+			children = (
+				39F4D30AB9AA8C2D7ACEF494B7D73CCA /* Pods-NicommonZappingTests.modulemap */,
+				D6F5634A73CD9260CB0AF5281F122865 /* Pods-NicommonZappingTests-acknowledgements.markdown */,
+				124F7EBD1A6A53F03225F4811629FC4E /* Pods-NicommonZappingTests-acknowledgements.plist */,
+				D45C6A62F2E820F70E12D054D9002768 /* Pods-NicommonZappingTests-dummy.m */,
+				02C9626D031E15DB313AE96415C85954 /* Pods-NicommonZappingTests-Info.plist */,
+				35970A5442E043B4655CAC2EF08CF470 /* Pods-NicommonZappingTests-umbrella.h */,
+				E27CF882481149B19464FD816014DE10 /* Pods-NicommonZappingTests.debug.xcconfig */,
+				059F58D426C324ACE49F4917CC443664 /* Pods-NicommonZappingTests.release.xcconfig */,
+			);
+			name = "Pods-NicommonZappingTests";
+			path = "Target Support Files/Pods-NicommonZappingTests";
+			sourceTree = "<group>";
+		};
+		8F9FDFAB425EDFAF6CB36425577CDA16 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F5B7F0D9D1BC7B998D6E0F23926C434C /* Pods_NicommonZapping.framework */,
+				0410DC7130C86C20EC811BA750398317 /* Pods_NicommonZapping_NicommonZappingUITests.framework */,
+				3BC31403D67B841DC51DEFEEC1784E74 /* Pods_NicommonZappingTests.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
@@ -258,9 +169,8 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				31660038A48EA5F471663966436524E8 /* Pods */,
-				646C1ED2803771E98BBF879A11C601FD /* Products */,
-				B8E808D0AFC578E4D89C4DEB2A233821 /* Targets Support Files */,
+				8F9FDFAB425EDFAF6CB36425577CDA16 /* Products */,
+				3A23BE76234B3A8BB9616798B8544A44 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -275,14 +185,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		8DB00752388FBE93C09D1817AFA0D1D3 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				30CFDA9B88F52CB26E68BA9943265627 /* Pods-NicommonZapping-NicommonZappingUITests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		B1A9440C963B7551503F86FE3C402A6E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -291,20 +193,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B407000DC8B9A5EF2647ED79EFEC3710 /* Headers */ = {
+		B6E42899E654BB5D5598A840358A622D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E428A08169508F6A3BEA163771E3DE5B /* Pods-NicommonZapping-umbrella.h in Headers */,
+				B21B8C7BDAAACDFFFCA3142AF99C5204 /* Pods-NicommonZapping-NicommonZappingUITests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E051C2FED2B76294071BFA50D9FA719D /* Headers */ = {
+		F323DFFC9EFD9FD803AAF7BD87816369 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F5E8CC0E12AED9DEF1FA149713B3D29 /* Kanna-umbrella.h in Headers */,
-				98A80A975711A029440E5197142990E9 /* Kanna.h in Headers */,
+				6641A3B459C213F35B0D19F7A83D525E /* Pods-NicommonZapping-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,17 +214,16 @@
 /* Begin PBXNativeTarget section */
 		21FF96A3D6223F4441BB658EB7EE6DE2 /* Pods-NicommonZapping-NicommonZappingUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CCE9AA43AFAA264B0965C50A0CA5FD8E /* Build configuration list for PBXNativeTarget "Pods-NicommonZapping-NicommonZappingUITests" */;
+			buildConfigurationList = D8D2C305C777075BD9019DBC22E0F303 /* Build configuration list for PBXNativeTarget "Pods-NicommonZapping-NicommonZappingUITests" */;
 			buildPhases = (
-				8DB00752388FBE93C09D1817AFA0D1D3 /* Headers */,
-				874852B4EAA82B0A03C6B012A3D57FED /* Sources */,
-				247E728C629DF2351E883B78831923F5 /* Frameworks */,
-				E9A208E946033DAF767EDE20D5670FAE /* Resources */,
+				B6E42899E654BB5D5598A840358A622D /* Headers */,
+				7D98FBD1F65DC10C65636748F0758420 /* Sources */,
+				D84B0A6904B45E0EF2FD4D6063132C93 /* Frameworks */,
+				271B244EAF8B20C6829EC3526A1DFE6B /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				DCC9D68441199E11F4C086A0B7CC1895 /* PBXTargetDependency */,
 			);
 			name = "Pods-NicommonZapping-NicommonZappingUITests";
 			productName = "Pods-NicommonZapping-NicommonZappingUITests";
@@ -332,39 +232,20 @@
 		};
 		3B8882D3A540F353E3119A61718C96DC /* Pods-NicommonZapping */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E46BFEAC50BE200DA9E32F24EA5D028C /* Build configuration list for PBXNativeTarget "Pods-NicommonZapping" */;
+			buildConfigurationList = B9B5A34190FBBA7244C11C6AAA117F48 /* Build configuration list for PBXNativeTarget "Pods-NicommonZapping" */;
 			buildPhases = (
-				B407000DC8B9A5EF2647ED79EFEC3710 /* Headers */,
-				BA1A324470B3694B06D350C8A9C26E0B /* Sources */,
-				6ABABCBC04DA67C848F44B6781F2AAAA /* Frameworks */,
-				E246F37613F8FC79EE9A44895B093725 /* Resources */,
+				F323DFFC9EFD9FD803AAF7BD87816369 /* Headers */,
+				3455BA97F53F2D9FFAB956C4FD1416ED /* Sources */,
+				93C019667E0CE0AFF00E1D0CCB1406AD /* Frameworks */,
+				BA342CD487955C12DC54B8C3041C2181 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				D417BF572772924FEAB384ACE2377D0C /* PBXTargetDependency */,
 			);
 			name = "Pods-NicommonZapping";
 			productName = "Pods-NicommonZapping";
 			productReference = F5B7F0D9D1BC7B998D6E0F23926C434C /* Pods_NicommonZapping.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		93AC747EDE1EE56F89BBF405C1D67027 /* Kanna */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 8A4AEBE015FDE4C158608D0B493CB29F /* Build configuration list for PBXNativeTarget "Kanna" */;
-			buildPhases = (
-				E051C2FED2B76294071BFA50D9FA719D /* Headers */,
-				16CE5D8FE9C68C5D927D695CD44D7F84 /* Sources */,
-				BD040212932C464BD48E25437FBFD03C /* Frameworks */,
-				D20FACCE86A71BB5A35B83189D2F40FA /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Kanna;
-			productName = Kanna;
-			productReference = 3EA922F9B70178D64EE578C60F4DD23B /* Kanna.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		CD1E44B52C60A890E714407842A6E62E /* Pods-NicommonZappingTests */ = {
@@ -396,7 +277,7 @@
 				LastUpgradeCheck = 1100;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -404,11 +285,10 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 646C1ED2803771E98BBF879A11C601FD /* Products */;
+			productRefGroup = 8F9FDFAB425EDFAF6CB36425577CDA16 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				93AC747EDE1EE56F89BBF405C1D67027 /* Kanna */,
 				3B8882D3A540F353E3119A61718C96DC /* Pods-NicommonZapping */,
 				21FF96A3D6223F4441BB658EB7EE6DE2 /* Pods-NicommonZapping-NicommonZappingUITests */,
 				CD1E44B52C60A890E714407842A6E62E /* Pods-NicommonZappingTests */,
@@ -424,21 +304,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D20FACCE86A71BB5A35B83189D2F40FA /* Resources */ = {
+		271B244EAF8B20C6829EC3526A1DFE6B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E246F37613F8FC79EE9A44895B093725 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E9A208E946033DAF767EDE20D5670FAE /* Resources */ = {
+		BA342CD487955C12DC54B8C3041C2181 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -448,25 +321,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		16CE5D8FE9C68C5D927D695CD44D7F84 /* Sources */ = {
+		3455BA97F53F2D9FFAB956C4FD1416ED /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4931A0D52921C13D6BE42385AB5F9A62 /* CSS.swift in Sources */,
-				EC33DD6EFB5A6494B059FD762316B939 /* Deprecated.swift in Sources */,
-				9F1523B4EDB43ABF65ADB49E3CDB823F /* Kanna-dummy.m in Sources */,
-				C9BE9617EFABC5E589FADF6F81B08EEE /* Kanna.swift in Sources */,
-				713679F510BE0BF69B3B198C0199C469 /* libxmlHTMLDocument.swift in Sources */,
-				183ED56ED5A304D31BF95FB4FF100E09 /* libxmlHTMLNode.swift in Sources */,
-				5649DC8F3E785DB6136A408EAE854679 /* libxmlParserOption.swift in Sources */,
+				342523FACA41295308EE350D26CC5F43 /* Pods-NicommonZapping-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		874852B4EAA82B0A03C6B012A3D57FED /* Sources */ = {
+		7D98FBD1F65DC10C65636748F0758420 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF3D63BEE58047D9F475D4DC49C55FDE /* Pods-NicommonZapping-NicommonZappingUITests-dummy.m in Sources */,
+				A62300BC068E3552C60AF40473261BE6 /* Pods-NicommonZapping-NicommonZappingUITests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,14 +342,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				76CF693EADEBBF6C61ADE1675E8496E2 /* Pods-NicommonZappingTests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BA1A324470B3694B06D350C8A9C26E0B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C3E9AD71E3B4E9F4A0E4A412CFD6B8F6 /* Pods-NicommonZapping-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -495,63 +354,12 @@
 			target = 3B8882D3A540F353E3119A61718C96DC /* Pods-NicommonZapping */;
 			targetProxy = 2A4646ACC4C66018A4C2A846766F2E5A /* PBXContainerItemProxy */;
 		};
-		D417BF572772924FEAB384ACE2377D0C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Kanna;
-			target = 93AC747EDE1EE56F89BBF405C1D67027 /* Kanna */;
-			targetProxy = 72F617360A6CBEF301896265F6F3B655 /* PBXContainerItemProxy */;
-		};
-		DCC9D68441199E11F4C086A0B7CC1895 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Kanna;
-			target = 93AC747EDE1EE56F89BBF405C1D67027 /* Kanna */;
-			targetProxy = 0CE91897D8DA16342D0495FF40569221 /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		153453312B34EB81BF99A84E2A84FB93 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 202CF911104C898FAD7A37C5894AE280 /* Pods-NicommonZapping-NicommonZappingUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-NicommonZapping-NicommonZappingUITests/Pods-NicommonZapping-NicommonZappingUITests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-NicommonZapping-NicommonZappingUITests/Pods-NicommonZapping-NicommonZappingUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		23DF0B263169A49B3E46E542EF72291B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8F5C7F51BE5D4342B1FD73EA5EDF1464 /* Pods-NicommonZappingTests.debug.xcconfig */;
+			baseConfigurationReference = E27CF882481149B19464FD816014DE10 /* Pods-NicommonZappingTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -587,10 +395,12 @@
 			};
 			name = Debug;
 		};
-		6B7657A657FEE76CA1C43148FBDC4253 /* Debug */ = {
+		83E5ACBAB2589A1068B15663A18F5061 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 06FA76397971902571DB82FE44377D9D /* Kanna.xcconfig */;
+			baseConfigurationReference = 47DAE9EBC0256946B0E2AA51266D1AD5 /* Pods-NicommonZapping.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -600,27 +410,67 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Kanna/Kanna-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Kanna/Kanna-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-NicommonZapping/Pods-NicommonZapping-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/Kanna/Kanna.modulemap";
-				PRODUCT_MODULE_NAME = Kanna;
-				PRODUCT_NAME = Kanna;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NicommonZapping/Pods-NicommonZapping.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		90ED46B421C0FC1291F2E502B11A065C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8E3FCF0B65EF9596E713D9B6686B030 /* Pods-NicommonZapping-NicommonZappingUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-NicommonZapping-NicommonZappingUITests/Pods-NicommonZapping-NicommonZappingUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NicommonZapping-NicommonZappingUITests/Pods-NicommonZapping-NicommonZappingUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		939F1A8F6BCEB7F9F64D9EEE50CAE014 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -686,9 +536,48 @@
 			};
 			name = Debug;
 		};
+		AAFEDF98A7D4D0DBC4494EF37B0C31B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 023C76AE39EF9D30FD3F7899B55FF884 /* Pods-NicommonZapping.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-NicommonZapping/Pods-NicommonZapping-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NicommonZapping/Pods-NicommonZapping.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		BC459A567DA7547C414524C1D3E9F50B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7C457242B80A1E8A38F8C54FA9D82C5C /* Pods-NicommonZappingTests.release.xcconfig */;
+			baseConfigurationReference = 059F58D426C324ACE49F4917CC443664 /* Pods-NicommonZappingTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -725,9 +614,9 @@
 			};
 			name = Release;
 		};
-		C80B116D8AA2AF86BDEDCDD65EBC186F /* Debug */ = {
+		DA4B1CD8752641ED5EBD34CCDE9CC34A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 79CD05C0AF506CF0BEAA69BE5D4EED51 /* Pods-NicommonZapping-NicommonZappingUITests.debug.xcconfig */;
+			baseConfigurationReference = 99EB672BC749B6EA9FB70FC253A6905F /* Pods-NicommonZapping-NicommonZappingUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -750,119 +639,6 @@
 				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-NicommonZapping-NicommonZappingUITests/Pods-NicommonZapping-NicommonZappingUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		C8E140473CB7ED76D3D7CA500254402B /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 06FA76397971902571DB82FE44377D9D /* Kanna.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Kanna/Kanna-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Kanna/Kanna-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/Kanna/Kanna.modulemap";
-				PRODUCT_MODULE_NAME = Kanna;
-				PRODUCT_NAME = Kanna;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		D4B28994205D0DA1738330FC92C9E3C7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9FBC13FEB6A8F35ECC44C9FA68C6696A /* Pods-NicommonZapping.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-NicommonZapping/Pods-NicommonZapping-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-NicommonZapping/Pods-NicommonZapping.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		DD4D2D506487B3A0AA84862D899D21D8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3AB734EBF494B9386AE4ED982E0A11C0 /* Pods-NicommonZapping.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-NicommonZapping/Pods-NicommonZapping-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-NicommonZapping/Pods-NicommonZapping.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -957,29 +733,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8A4AEBE015FDE4C158608D0B493CB29F /* Build configuration list for PBXNativeTarget "Kanna" */ = {
+		B9B5A34190FBBA7244C11C6AAA117F48 /* Build configuration list for PBXNativeTarget "Pods-NicommonZapping" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6B7657A657FEE76CA1C43148FBDC4253 /* Debug */,
-				C8E140473CB7ED76D3D7CA500254402B /* Release */,
+				83E5ACBAB2589A1068B15663A18F5061 /* Debug */,
+				AAFEDF98A7D4D0DBC4494EF37B0C31B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CCE9AA43AFAA264B0965C50A0CA5FD8E /* Build configuration list for PBXNativeTarget "Pods-NicommonZapping-NicommonZappingUITests" */ = {
+		D8D2C305C777075BD9019DBC22E0F303 /* Build configuration list for PBXNativeTarget "Pods-NicommonZapping-NicommonZappingUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C80B116D8AA2AF86BDEDCDD65EBC186F /* Debug */,
-				153453312B34EB81BF99A84E2A84FB93 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E46BFEAC50BE200DA9E32F24EA5D028C /* Build configuration list for PBXNativeTarget "Pods-NicommonZapping" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DD4D2D506487B3A0AA84862D899D21D8 /* Debug */,
-				D4B28994205D0DA1738330FC92C9E3C7 /* Release */,
+				DA4B1CD8752641ED5EBD34CCDE9CC34A /* Debug */,
+				90ED46B421C0FC1291F2E502B11A065C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
