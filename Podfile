@@ -6,6 +6,8 @@ target 'NicommonZapping' do
   use_frameworks!
 
   # Pods for NicommonZapping
+  # HTMLのパーサー
+  pod 'Kanna'
 
   target 'NicommonZappingTests' do
     inherit! :search_paths

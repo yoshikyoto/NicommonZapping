@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		543512A92B226914FDEB5022 /* Pods_NicommonZapping_NicommonZappingUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E80B2180D3D9A655C9EAFF4D /* Pods_NicommonZapping_NicommonZappingUITests.framework */; };
 		55CCD89923B2F2AA007F9F1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CCD89823B2F2AA007F9F1C /* AppDelegate.swift */; };
 		55CCD89B23B2F2AA007F9F1C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CCD89A23B2F2AA007F9F1C /* SceneDelegate.swift */; };
 		55CCD89D23B2F2AA007F9F1C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CCD89C23B2F2AA007F9F1C /* ContentView.swift */; };
@@ -16,6 +17,8 @@
 		55CCD8B023B2F2AC007F9F1C /* NicommonZappingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CCD8AF23B2F2AC007F9F1C /* NicommonZappingTests.swift */; };
 		55CCD8BB23B2F2AC007F9F1C /* NicommonZappingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CCD8BA23B2F2AC007F9F1C /* NicommonZappingUITests.swift */; };
 		55CCD8CA23B2FC25007F9F1C /* NicoCommonsClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CCD8C923B2FC25007F9F1C /* NicoCommonsClient.swift */; };
+		9C7D0CB1F7F93C2AAE91B71C /* Pods_NicommonZapping.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C26D4CB7C0B7CAFF6709078 /* Pods_NicommonZapping.framework */; };
+		E8B6FEFA6E8551B67370C33D /* Pods_NicommonZappingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC4750FE835B28FA5AB6E1AE /* Pods_NicommonZappingTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1DF91BC4D00972A07DF70FC9 /* Pods-NicommonZapping-NicommonZappingUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NicommonZapping-NicommonZappingUITests.debug.xcconfig"; path = "Target Support Files/Pods-NicommonZapping-NicommonZappingUITests/Pods-NicommonZapping-NicommonZappingUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2E14AAFADBE5B396C0CCE45E /* Pods-NicommonZappingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NicommonZappingTests.release.xcconfig"; path = "Target Support Files/Pods-NicommonZappingTests/Pods-NicommonZappingTests.release.xcconfig"; sourceTree = "<group>"; };
+		2F8C1A3542D7C4FA497C52C7 /* Pods-NicommonZappingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NicommonZappingTests.debug.xcconfig"; path = "Target Support Files/Pods-NicommonZappingTests/Pods-NicommonZappingTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3C26D4CB7C0B7CAFF6709078 /* Pods_NicommonZapping.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NicommonZapping.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		55CCD89523B2F2AA007F9F1C /* NicommonZapping.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NicommonZapping.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55CCD89823B2F2AA007F9F1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55CCD89A23B2F2AA007F9F1C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +58,11 @@
 		55CCD8BA23B2F2AC007F9F1C /* NicommonZappingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NicommonZappingUITests.swift; sourceTree = "<group>"; };
 		55CCD8BC23B2F2AC007F9F1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		55CCD8C923B2FC25007F9F1C /* NicoCommonsClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NicoCommonsClient.swift; sourceTree = "<group>"; };
+		D40C9971E6D803B271FDDDCA /* Pods-NicommonZapping.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NicommonZapping.debug.xcconfig"; path = "Target Support Files/Pods-NicommonZapping/Pods-NicommonZapping.debug.xcconfig"; sourceTree = "<group>"; };
+		D8104FAE9145AB85967D360F /* Pods-NicommonZapping.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NicommonZapping.release.xcconfig"; path = "Target Support Files/Pods-NicommonZapping/Pods-NicommonZapping.release.xcconfig"; sourceTree = "<group>"; };
+		E80B2180D3D9A655C9EAFF4D /* Pods_NicommonZapping_NicommonZappingUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NicommonZapping_NicommonZappingUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC4750FE835B28FA5AB6E1AE /* Pods_NicommonZappingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NicommonZappingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6B0E6CF61A9A96E7E434F3E /* Pods-NicommonZapping-NicommonZappingUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NicommonZapping-NicommonZappingUITests.release.xcconfig"; path = "Target Support Files/Pods-NicommonZapping-NicommonZappingUITests/Pods-NicommonZapping-NicommonZappingUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C7D0CB1F7F93C2AAE91B71C /* Pods_NicommonZapping.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8B6FEFA6E8551B67370C33D /* Pods_NicommonZappingTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +86,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				543512A92B226914FDEB5022 /* Pods_NicommonZapping_NicommonZappingUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		306103EE989B1417E382F587 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3C26D4CB7C0B7CAFF6709078 /* Pods_NicommonZapping.framework */,
+				E80B2180D3D9A655C9EAFF4D /* Pods_NicommonZapping_NicommonZappingUITests.framework */,
+				EC4750FE835B28FA5AB6E1AE /* Pods_NicommonZappingTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		55CCD88C23B2F2AA007F9F1C = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +110,8 @@
 				55CCD8AE23B2F2AC007F9F1C /* NicommonZappingTests */,
 				55CCD8B923B2F2AC007F9F1C /* NicommonZappingUITests */,
 				55CCD89623B2F2AA007F9F1C /* Products */,
+				D4806F5479B76CE89E7AB302 /* Pods */,
+				306103EE989B1417E382F587 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -147,6 +174,20 @@
 			path = Niconico;
 			sourceTree = "<group>";
 		};
+		D4806F5479B76CE89E7AB302 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D40C9971E6D803B271FDDDCA /* Pods-NicommonZapping.debug.xcconfig */,
+				D8104FAE9145AB85967D360F /* Pods-NicommonZapping.release.xcconfig */,
+				1DF91BC4D00972A07DF70FC9 /* Pods-NicommonZapping-NicommonZappingUITests.debug.xcconfig */,
+				F6B0E6CF61A9A96E7E434F3E /* Pods-NicommonZapping-NicommonZappingUITests.release.xcconfig */,
+				2F8C1A3542D7C4FA497C52C7 /* Pods-NicommonZappingTests.debug.xcconfig */,
+				2E14AAFADBE5B396C0CCE45E /* Pods-NicommonZappingTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -154,9 +195,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 55CCD8BF23B2F2AC007F9F1C /* Build configuration list for PBXNativeTarget "NicommonZapping" */;
 			buildPhases = (
+				CD14F3C5E5710F506DB69256 /* [CP] Check Pods Manifest.lock */,
 				55CCD89123B2F2AA007F9F1C /* Sources */,
 				55CCD89223B2F2AA007F9F1C /* Frameworks */,
 				55CCD89323B2F2AA007F9F1C /* Resources */,
+				E6BDC165717BBA4E5C2B015A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -171,6 +214,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 55CCD8C223B2F2AC007F9F1C /* Build configuration list for PBXNativeTarget "NicommonZappingTests" */;
 			buildPhases = (
+				8B1803097FD7FBD7ACB26EC2 /* [CP] Check Pods Manifest.lock */,
 				55CCD8A723B2F2AC007F9F1C /* Sources */,
 				55CCD8A823B2F2AC007F9F1C /* Frameworks */,
 				55CCD8A923B2F2AC007F9F1C /* Resources */,
@@ -189,9 +233,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 55CCD8C523B2F2AC007F9F1C /* Build configuration list for PBXNativeTarget "NicommonZappingUITests" */;
 			buildPhases = (
+				874BE65A2EE1F6315C83DD83 /* [CP] Check Pods Manifest.lock */,
 				55CCD8B223B2F2AC007F9F1C /* Sources */,
 				55CCD8B323B2F2AC007F9F1C /* Frameworks */,
 				55CCD8B423B2F2AC007F9F1C /* Resources */,
+				CD905225D5B76580C927596D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -272,6 +318,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		874BE65A2EE1F6315C83DD83 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NicommonZapping-NicommonZappingUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B1803097FD7FBD7ACB26EC2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NicommonZappingTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD14F3C5E5710F506DB69256 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NicommonZapping-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD905225D5B76580C927596D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NicommonZapping-NicommonZappingUITests/Pods-NicommonZapping-NicommonZappingUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NicommonZapping-NicommonZappingUITests/Pods-NicommonZapping-NicommonZappingUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NicommonZapping-NicommonZappingUITests/Pods-NicommonZapping-NicommonZappingUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E6BDC165717BBA4E5C2B015A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NicommonZapping/Pods-NicommonZapping-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NicommonZapping/Pods-NicommonZapping-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NicommonZapping/Pods-NicommonZapping-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		55CCD89123B2F2AA007F9F1C /* Sources */ = {
@@ -444,6 +593,7 @@
 		};
 		55CCD8C023B2F2AC007F9F1C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D40C9971E6D803B271FDDDCA /* Pods-NicommonZapping.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -464,6 +614,7 @@
 		};
 		55CCD8C123B2F2AC007F9F1C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8104FAE9145AB85967D360F /* Pods-NicommonZapping.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -484,6 +635,7 @@
 		};
 		55CCD8C323B2F2AC007F9F1C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F8C1A3542D7C4FA497C52C7 /* Pods-NicommonZappingTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -506,6 +658,7 @@
 		};
 		55CCD8C423B2F2AC007F9F1C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E14AAFADBE5B396C0CCE45E /* Pods-NicommonZappingTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -528,6 +681,7 @@
 		};
 		55CCD8C623B2F2AC007F9F1C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DF91BC4D00972A07DF70FC9 /* Pods-NicommonZapping-NicommonZappingUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -548,6 +702,7 @@
 		};
 		55CCD8C723B2F2AC007F9F1C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6B0E6CF61A9A96E7E434F3E /* Pods-NicommonZapping-NicommonZappingUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
