@@ -17,7 +17,7 @@ public class NicoCommonsClient {
     }
     
     public func searchAudio() {
-        /// これはエラーにならないはずなので ! してしまう
+        // これはエラーにならないはずなので ! してしまう
         var urlComponents = URLComponents(string: "https://public-api.commons.nicovideo.jp/v1/materials/search/tags")!
         let queryItems = self.queryBuilder.build(
             sort: Sort.START_TIME_DESC,
@@ -26,8 +26,8 @@ public class NicoCommonsClient {
             commercialUses: [CommercialUse.OK]
         )
         urlComponents.queryItems = queryItems
-        
-        /// エラーにならないはずなので ! してしまう
+        // TODO user-agent をつける
+        // エラーにならないはずなので ! してしまう
         let request = URLRequest(url: urlComponents.url!)
         print("request!")
         print(request)
@@ -62,7 +62,7 @@ struct NicoCommonsSearchData: Codable {
     let materials: [NicoCommonsMaterial]
 }
 
-struct NicoCommonsMaterial: Codable {
+public struct NicoCommonsMaterial: Codable {
     let id: String
     let title: String
     

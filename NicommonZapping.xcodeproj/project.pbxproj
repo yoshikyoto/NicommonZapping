@@ -17,6 +17,7 @@
 		55CCD8B023B2F2AC007F9F1C /* NicommonZappingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CCD8AF23B2F2AC007F9F1C /* NicommonZappingTests.swift */; };
 		55CCD8BB23B2F2AC007F9F1C /* NicommonZappingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CCD8BA23B2F2AC007F9F1C /* NicommonZappingUITests.swift */; };
 		55CCD8CA23B2FC25007F9F1C /* NicoCommonsClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CCD8C923B2FC25007F9F1C /* NicoCommonsClient.swift */; };
+		55FC452723B83657007266CB /* AudioRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FC452623B83656007266CB /* AudioRow.swift */; };
 		9C7D0CB1F7F93C2AAE91B71C /* Pods_NicommonZapping.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C26D4CB7C0B7CAFF6709078 /* Pods_NicommonZapping.framework */; };
 		E8B6FEFA6E8551B67370C33D /* Pods_NicommonZappingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC4750FE835B28FA5AB6E1AE /* Pods_NicommonZappingTests.framework */; };
 /* End PBXBuildFile section */
@@ -58,6 +59,7 @@
 		55CCD8BA23B2F2AC007F9F1C /* NicommonZappingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NicommonZappingUITests.swift; sourceTree = "<group>"; };
 		55CCD8BC23B2F2AC007F9F1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		55CCD8C923B2FC25007F9F1C /* NicoCommonsClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NicoCommonsClient.swift; sourceTree = "<group>"; };
+		55FC452623B83656007266CB /* AudioRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRow.swift; sourceTree = "<group>"; };
 		D40C9971E6D803B271FDDDCA /* Pods-NicommonZapping.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NicommonZapping.debug.xcconfig"; path = "Target Support Files/Pods-NicommonZapping/Pods-NicommonZapping.debug.xcconfig"; sourceTree = "<group>"; };
 		D8104FAE9145AB85967D360F /* Pods-NicommonZapping.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NicommonZapping.release.xcconfig"; path = "Target Support Files/Pods-NicommonZapping/Pods-NicommonZapping.release.xcconfig"; sourceTree = "<group>"; };
 		E80B2180D3D9A655C9EAFF4D /* Pods_NicommonZapping_NicommonZappingUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NicommonZapping_NicommonZappingUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -134,6 +136,7 @@
 				55CCD89C23B2F2AA007F9F1C /* ContentView.swift */,
 				55CCD89E23B2F2AB007F9F1C /* Assets.xcassets */,
 				55CCD8A323B2F2AB007F9F1C /* LaunchScreen.storyboard */,
+				55FC452623B83656007266CB /* AudioRow.swift */,
 				55CCD8A623B2F2AB007F9F1C /* Info.plist */,
 				55CCD8A023B2F2AB007F9F1C /* Preview Content */,
 			);
@@ -391,6 +394,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				55CCD89923B2F2AA007F9F1C /* AppDelegate.swift in Sources */,
+				55FC452723B83657007266CB /* AudioRow.swift in Sources */,
 				55CCD89B23B2F2AA007F9F1C /* SceneDelegate.swift in Sources */,
 				55CCD8CA23B2FC25007F9F1C /* NicoCommonsClient.swift in Sources */,
 				55CCD89D23B2F2AA007F9F1C /* ContentView.swift in Sources */,
