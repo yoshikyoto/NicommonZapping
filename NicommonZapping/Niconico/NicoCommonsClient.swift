@@ -44,7 +44,7 @@ public class NicoCommonsClient {
             // レスポンスのパース
             do {
                 let response = try self.jsonDecoder.decode(NicoCommonsSearchResponse.self, from: data)
-                // TODO パースに成功したあとの処理
+                // データが取得できた場合
                 onSuccess(response.data)
             } catch {
                 // レスポンスのパースに失敗した場合
