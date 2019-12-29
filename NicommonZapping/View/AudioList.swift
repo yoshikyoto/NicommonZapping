@@ -9,14 +9,10 @@
 import SwiftUI
 
 struct AudioList: View {
-    let audios = [
-        Audio(id: "nc123", title:"サンプル"),
-        Audio(id: "nc121", title:"サンプル2"),
-    ]
-    
+    @EnvironmentObject var audioData: AudioData
     var body: some View {
         NavigationView {
-            List(audios, id: \.id) { audio in
+            List(self.audioData.audios, id: \.id) { audio in
                 NavigationLink(destination: ContentView()) {
                     AudioRow(audio: audio)
                 }

@@ -13,6 +13,9 @@ struct AudioRow: View {
     
     var body: some View {
         HStack {
+            Image(systemName: "star.fill")
+                .imageScale(.medium)
+                .foregroundColor(.yellow)
             Text(audio.title)
             Spacer()
             Text(audio.id)

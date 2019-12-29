@@ -20,6 +20,7 @@
 		55FC452723B83657007266CB /* AudioRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FC452623B83656007266CB /* AudioRow.swift */; };
 		55FC452923B849AD007266CB /* AudioList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FC452823B849AD007266CB /* AudioList.swift */; };
 		55FC452B23B84EDC007266CB /* Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FC452A23B84EDC007266CB /* Audio.swift */; };
+		55FC452E23B86DEB007266CB /* AudioData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FC452D23B86DEB007266CB /* AudioData.swift */; };
 		9C7D0CB1F7F93C2AAE91B71C /* Pods_NicommonZapping.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C26D4CB7C0B7CAFF6709078 /* Pods_NicommonZapping.framework */; };
 		E8B6FEFA6E8551B67370C33D /* Pods_NicommonZappingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC4750FE835B28FA5AB6E1AE /* Pods_NicommonZappingTests.framework */; };
 /* End PBXBuildFile section */
@@ -64,6 +65,7 @@
 		55FC452623B83656007266CB /* AudioRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRow.swift; sourceTree = "<group>"; };
 		55FC452823B849AD007266CB /* AudioList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioList.swift; sourceTree = "<group>"; };
 		55FC452A23B84EDC007266CB /* Audio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Audio.swift; sourceTree = "<group>"; };
+		55FC452D23B86DEB007266CB /* AudioData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioData.swift; sourceTree = "<group>"; };
 		D40C9971E6D803B271FDDDCA /* Pods-NicommonZapping.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NicommonZapping.debug.xcconfig"; path = "Target Support Files/Pods-NicommonZapping/Pods-NicommonZapping.debug.xcconfig"; sourceTree = "<group>"; };
 		D8104FAE9145AB85967D360F /* Pods-NicommonZapping.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NicommonZapping.release.xcconfig"; path = "Target Support Files/Pods-NicommonZapping/Pods-NicommonZapping.release.xcconfig"; sourceTree = "<group>"; };
 		E80B2180D3D9A655C9EAFF4D /* Pods_NicommonZapping_NicommonZappingUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NicommonZapping_NicommonZappingUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -137,11 +139,9 @@
 				55CCD8C823B2FC09007F9F1C /* Niconico */,
 				55CCD89823B2F2AA007F9F1C /* AppDelegate.swift */,
 				55CCD89A23B2F2AA007F9F1C /* SceneDelegate.swift */,
-				55CCD89C23B2F2AA007F9F1C /* ContentView.swift */,
 				55CCD89E23B2F2AB007F9F1C /* Assets.xcassets */,
 				55CCD8A323B2F2AB007F9F1C /* LaunchScreen.storyboard */,
-				55FC452623B83656007266CB /* AudioRow.swift */,
-				55FC452823B849AD007266CB /* AudioList.swift */,
+				55FC452C23B86CCA007266CB /* View */,
 				55CCD8A623B2F2AB007F9F1C /* Info.plist */,
 				55CCD8A023B2F2AB007F9F1C /* Preview Content */,
 			);
@@ -181,6 +181,17 @@
 				55FC452A23B84EDC007266CB /* Audio.swift */,
 			);
 			path = Niconico;
+			sourceTree = "<group>";
+		};
+		55FC452C23B86CCA007266CB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				55CCD89C23B2F2AA007F9F1C /* ContentView.swift */,
+				55FC452623B83656007266CB /* AudioRow.swift */,
+				55FC452823B849AD007266CB /* AudioList.swift */,
+				55FC452D23B86DEB007266CB /* AudioData.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		D4806F5479B76CE89E7AB302 /* Pods */ = {
@@ -405,6 +416,7 @@
 				55CCD89B23B2F2AA007F9F1C /* SceneDelegate.swift in Sources */,
 				55CCD8CA23B2FC25007F9F1C /* NicoCommonsClient.swift in Sources */,
 				55CCD89D23B2F2AA007F9F1C /* ContentView.swift in Sources */,
+				55FC452E23B86DEB007266CB /* AudioData.swift in Sources */,
 				55FC452B23B84EDC007266CB /* Audio.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

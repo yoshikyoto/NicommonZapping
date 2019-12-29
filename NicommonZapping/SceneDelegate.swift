@@ -20,12 +20,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         
         print("let us search audio")
-        let commons = NicoCommonsClient()
-        commons.searchAudio(onSuccess: {data in
-            // Create the SwiftUI view that provides the window contents.
-            // let contentView = ContentView()
-        })
-        let audioList = AudioList()
+        
+        let audioData = AudioData()
+        let audioList = AudioList().environmentObject(audioData)
 
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {
@@ -35,6 +32,18 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             window.makeKeyAndVisible()
         }
 
+        let commons = NicoCommonsClient()
+        commons.searchAudio(onSuccess: {data in
+            var audios: [Audio] = []
+            for material in data.materials {
+                let audio = Audio(id: material.id, title: material.title)
+                audios.append(audio)
+            }
+            //audioList.audios = audios
+            DispatchQueue.main.async {
+                audioData.audios = audios
+            }
+        })
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
