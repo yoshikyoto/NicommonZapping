@@ -16,7 +16,9 @@ public class NicoCommonsClient {
         self.jsonDecoder.dateDecodingStrategy = .iso8601
     }
     
-    public func searchAudio() {
+    public func searchAudio(
+        onSuccess: @escaping (NicoCommonsSearchData) -> Void
+    ) {
         // これはエラーにならないはずなので ! してしまう
         var urlComponents = URLComponents(string: "https://public-api.commons.nicovideo.jp/v1/materials/search/tags")!
         let queryItems = self.queryBuilder.build(
@@ -43,6 +45,7 @@ public class NicoCommonsClient {
             do {
                 let response = try self.jsonDecoder.decode(NicoCommonsSearchResponse.self, from: data)
                 // TODO パースに成功したあとの処理
+                onSuccess(response.data)
             } catch {
                 // レスポンスのパースに失敗した場合
                 // TODO エラー処理
@@ -58,7 +61,7 @@ struct NicoCommonsSearchResponse: Codable {
     let data: NicoCommonsSearchData
 }
 
-struct NicoCommonsSearchData: Codable {
+public struct NicoCommonsSearchData: Codable {
     let materials: [NicoCommonsMaterial]
 }
 

@@ -21,10 +21,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         print("let us search audio")
         let commons = NicoCommonsClient()
-        commons.searchAudio()
-
-        // Create the SwiftUI view that provides the window contents.
-        // let contentView = ContentView()
+        commons.searchAudio(onSuccess: {data in
+            // Create the SwiftUI view that provides the window contents.
+            // let contentView = ContentView()
+        })
         let audioList = AudioList()
 
         // Use a UIHostingController as window root view controller.
@@ -34,6 +34,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             self.window = window
             window.makeKeyAndVisible()
         }
+
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

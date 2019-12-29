@@ -15,9 +15,13 @@ struct AudioList: View {
     ]
     
     var body: some View {
-        List(audios, id: \.id) { audio in
-            AudioRow(audio: audio)
-        }
+        NavigationView {
+            List(audios, id: \.id) { audio in
+                NavigationLink(destination: ContentView()) {
+                    AudioRow(audio: audio)
+                }
+            }
+        }.navigationBarTitle(Text("音声"))
     }
 }
 
