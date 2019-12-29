@@ -3,11 +3,21 @@ import UIKit
 
 struct AudioList: View {
     @EnvironmentObject var audioData: AudioData
+    
     var body: some View {
-        List(self.audioData.audios, id: \.id) { audio in
-            NavigationLink(destination: ContentView()) {
-                AudioRow(audio: audio)
+        NavigationView {
+            List(self.audioData.audios, id: \.id) { audio in
+                NavigationLink(destination: ContentView()) {
+                    AudioRow(audio: audio)
+                }
             }
+            .navigationBarTitle(Text("音声"))
+            .navigationBarItems(trailing: Button(action: {
+                // 何もしない
+            }){
+                Text("設定")
+            })
+            
         }
     }
 }
