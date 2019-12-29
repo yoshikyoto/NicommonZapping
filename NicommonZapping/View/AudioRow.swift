@@ -10,16 +10,20 @@ struct AudioRow: View {
                 .foregroundColor(.yellow)
             Text(audio.title)
             Spacer()
-            Text(audio.id)
+            Text(audio.globalId)
         }
     }
 }
 
+/*
 struct AudioRow_Previews: PreviewProvider {
     static var previews: some View {
-        Group {
-            AudioRow(audio: Audio(id: "nc123", title:"サンプル"))
-            AudioRow(audio: Audio(id: "nc121", title:"サンプル2"))
-        }.previewLayout(.fixed(width: 300, height: 70))
+        AudioRow(audio: Audio(
+            id: 123,
+            globalId: "nc123",
+            title: "Audio Title",
+            url: URL()
+        ))
     }
 }
+*/

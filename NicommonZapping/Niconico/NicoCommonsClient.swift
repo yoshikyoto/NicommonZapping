@@ -66,14 +66,15 @@ public struct NicoCommonsSearchData: Codable {
 }
 
 public struct NicoCommonsMaterial: Codable {
-    let id: String
+    /// id は数字のみのID
+    let id: Int
+    /// globalId は ncXXXX 形式のID
+    let globalId: String
     let title: String
     
     private enum CodingKeys: String, CodingKey {
-        // APIのレスポンスでは id は数字のみのID
-        // global_id は ncXXXX 形式のID
-        // nc 付きのものを使いたいので、 id を global_id とする
-        case id = "global_id"
+        case id = "id"
+        case globalId = "global_id"
         case title = "title"
     }
 }

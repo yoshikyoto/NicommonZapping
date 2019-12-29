@@ -2,6 +2,8 @@ import Foundation
 
 /// コモンズのオーディオの情報
 struct Audio {
-    let id: String
+    let id: Int
+    let globalId: String
     let title: String
+    let url: URL
 }

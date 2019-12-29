@@ -1,4 +1,5 @@
 import UIKit
+import AVKit
 import SwiftUI
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
@@ -28,12 +29,34 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         commons.searchAudio(onSuccess: {data in
             var audios: [Audio] = []
             for material in data.materials {
-                let audio = Audio(id: material.id, title: material.title)
+                // サンプル再生
+                // https://commons.nicovideo.jp/api/preview/get?cid=208577&ts=20191228103003
+                //  - これだとflvが降ってくる
+                //  - 再生できねぇ
+                // フル再生
+                // https://deliver.commons.nicovideo.jp/download/nc208577
+                //  - ログインが必要
+                //  - mp3とかwavとかが降ってくる
+                var urlComponents = URLComponents(string: "https://deliver.commons.nicovideo.jp/download/nc208577")!
+                urlComponents.queryItems = [
+                    URLQueryItem(name: "cid", value: String(material.id)),
+                    // TODO tsの値をちゃんと設定する
+                    URLQueryItem(name: "ts", value: "20191228103003")
+                ]
+                
+                let audio = Audio(
+                    id: material.id,
+                    globalId: material.globalId,
+                    title: material.title,
+                    url: urlComponents.url! // エラーにはならないはず
+                )
                 audios.append(audio)
             }
             //audioList.audios = audios
             DispatchQueue.main.async {
                 audioData.audios = audios
+                let selectedAudio = audios[0]
+                print(selectedAudio.url)
             }
         })
     }
