@@ -8,11 +8,6 @@
 
 import SwiftUI
 
-struct Audio {
-    let id: String
-    let title: String
-}
-
 struct AudioRow: View {
     let audio: Audio
     
@@ -27,6 +22,9 @@ struct AudioRow: View {
 
 struct AudioRow_Previews: PreviewProvider {
     static var previews: some View {
-        AudioRow(audio: Audio(id: "nc123", title:"サンプル"))
+        Group {
+            AudioRow(audio: Audio(id: "nc123", title:"サンプル"))
+            AudioRow(audio: Audio(id: "nc121", title:"サンプル2"))
+        }.previewLayout(.fixed(width: 300, height: 70))
     }
 }

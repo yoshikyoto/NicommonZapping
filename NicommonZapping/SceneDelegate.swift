@@ -24,12 +24,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         commons.searchAudio()
 
         // Create the SwiftUI view that provides the window contents.
-        let contentView = ContentView()
+        // let contentView = ContentView()
+        let audioList = AudioList()
 
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
-            window.rootViewController = UIHostingController(rootView: contentView)
+            window.rootViewController = UIHostingController(rootView: audioList)
             self.window = window
             window.makeKeyAndVisible()
         }
