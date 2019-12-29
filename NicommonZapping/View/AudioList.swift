@@ -3,6 +3,7 @@ import UIKit
 
 struct AudioList: View {
     @EnvironmentObject var audioData: AudioData
+    @State private var isShowingSettingModal = false
     
     var body: some View {
         NavigationView {
@@ -11,13 +12,21 @@ struct AudioList: View {
                     AudioRow(audio: audio)
                 }
             }
+            // NavigationViewにタイトルをつける
+            // NavigationView{} の中に書くので注意
             .navigationBarTitle(Text("音声"))
+                
+            // NavigationView の右上にボタンを配置する
+            // action と中身を必ず設定しなければならない
             .navigationBarItems(trailing: Button(action: {
-                // 何もしない
+                // クリックした時のアクション
+                self.isShowingSettingModal.toggle()
             }){
+                // ボタンの文字
                 Text("設定")
+            }.sheet(isPresented: self.$isShowingSettingModal) {
+                SettingView().environmentObject(SettingData.shared)
             })
-            
         }
     }
 }
