@@ -24,7 +24,7 @@
 		55FC453223B91BF7007266CB /* NicoConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FC453123B91BF7007266CB /* NicoConfig.swift */; };
 		55FC453423B92C41007266CB /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FC453323B92C41007266CB /* SettingView.swift */; };
 		55FC457423B93501007266CB /* SettingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FC457323B93501007266CB /* SettingData.swift */; };
-		55FC457623B9DB0E007266CB /* XmlParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FC457523B9DB0E007266CB /* XmlParser.swift */; };
+		55FC457623B9DB0E007266CB /* NicoXmlParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FC457523B9DB0E007266CB /* NicoXmlParser.swift */; };
 		9C7D0CB1F7F93C2AAE91B71C /* Pods_NicommonZapping.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C26D4CB7C0B7CAFF6709078 /* Pods_NicommonZapping.framework */; };
 		E8B6FEFA6E8551B67370C33D /* Pods_NicommonZappingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC4750FE835B28FA5AB6E1AE /* Pods_NicommonZappingTests.framework */; };
 /* End PBXBuildFile section */
@@ -73,7 +73,7 @@
 		55FC453123B91BF7007266CB /* NicoConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NicoConfig.swift; sourceTree = "<group>"; };
 		55FC453323B92C41007266CB /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		55FC457323B93501007266CB /* SettingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingData.swift; sourceTree = "<group>"; };
-		55FC457523B9DB0E007266CB /* XmlParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XmlParser.swift; sourceTree = "<group>"; };
+		55FC457523B9DB0E007266CB /* NicoXmlParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NicoXmlParser.swift; sourceTree = "<group>"; };
 		D40C9971E6D803B271FDDDCA /* Pods-NicommonZapping.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NicommonZapping.debug.xcconfig"; path = "Target Support Files/Pods-NicommonZapping/Pods-NicommonZapping.debug.xcconfig"; sourceTree = "<group>"; };
 		D8104FAE9145AB85967D360F /* Pods-NicommonZapping.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NicommonZapping.release.xcconfig"; path = "Target Support Files/Pods-NicommonZapping/Pods-NicommonZapping.release.xcconfig"; sourceTree = "<group>"; };
 		E80B2180D3D9A655C9EAFF4D /* Pods_NicommonZapping_NicommonZappingUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NicommonZapping_NicommonZappingUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -186,9 +186,9 @@
 			isa = PBXGroup;
 			children = (
 				55CCD8C923B2FC25007F9F1C /* NicoCommonsClient.swift */,
+				55FC457523B9DB0E007266CB /* NicoXmlParser.swift */,
 				55FC452A23B84EDC007266CB /* Audio.swift */,
 				55FC453123B91BF7007266CB /* NicoConfig.swift */,
-				55FC457523B9DB0E007266CB /* XmlParser.swift */,
 			);
 			path = Niconico;
 			sourceTree = "<group>";
@@ -430,7 +430,7 @@
 				55CCD89B23B2F2AA007F9F1C /* SceneDelegate.swift in Sources */,
 				55CCD8CA23B2FC25007F9F1C /* NicoCommonsClient.swift in Sources */,
 				55CCD89D23B2F2AA007F9F1C /* ContentView.swift in Sources */,
-				55FC457623B9DB0E007266CB /* XmlParser.swift in Sources */,
+				55FC457623B9DB0E007266CB /* NicoXmlParser.swift in Sources */,
 				55FC452E23B86DEB007266CB /* AudioData.swift in Sources */,
 				55FC457423B93501007266CB /* SettingData.swift in Sources */,
 				55FC452B23B84EDC007266CB /* Audio.swift in Sources */,

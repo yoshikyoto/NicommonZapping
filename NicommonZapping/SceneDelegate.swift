@@ -12,8 +12,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         
-        print("let us search audio")
-        
         let audioData = AudioData()
         let audioList = AudioList().environmentObject(audioData)
 
@@ -58,7 +56,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             DispatchQueue.main.async {
                 audioData.audios = audios
                 let selectedAudio = audios[0]
-                print(selectedAudio.url)
             }
         })
     }

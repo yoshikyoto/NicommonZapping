@@ -21,13 +21,13 @@ public class NicoCommonsClient {
     
     public func login() {
         print("login します")
-        var urlComponents = URLComponents(
+        let urlComponents = URLComponents(
             string: "https://secure.nicovideo.jp/secure/login"
         )!
         let mail = SettingData.shared.email
         let password = SettingData.shared.password
-        print(mail)
-        print(password)
+        // print(mail)
+        // print(password)
         let formData = "mail=\(mail)&password=\(password)&site=nicobox"
         var request = URLRequest(url: urlComponents.url!)
         request.httpMethod = "POST"
@@ -37,7 +37,11 @@ public class NicoCommonsClient {
                 // TODO エラー処理
                 return
             }
-            
+            guard let userSession = self.xmlParser.getUserSession(data: data) else {
+                // TODO エラー処理
+                // 正規表現にマッチするものがなかった場合
+                return
+            }
         }
         task.resume()
     }
@@ -57,10 +61,7 @@ public class NicoCommonsClient {
         // TODO user-agent をつける
         // エラーにならないはずなので ! してしまう
         let request = URLRequest(url: urlComponents.url!)
-        print("request!")
-        print(request)
         let task = self.urlSession.dataTask(with: request) { (data, urlResponse, error) in
-            print("task result")
             // TODO ステータスコード見たほうが良い気がする
             guard let data = data else {
                 // TODO エラー時の処理
