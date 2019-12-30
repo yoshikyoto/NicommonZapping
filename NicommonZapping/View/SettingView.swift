@@ -9,7 +9,7 @@ struct SettingView: View {
             TextField("text@example.com", text: $data.email)
             
             Text("パスワード").frame(maxWidth: .infinity, alignment: .leading)
-            TextField("password", text: $data.password)
+            SecureField("password", text: $data.password)
             
             Spacer()
         }

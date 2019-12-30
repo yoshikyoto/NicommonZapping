@@ -26,6 +26,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         }
 
         let commons = NicoCommonsClient()
+        commons.login()
         commons.searchAudio(onSuccess: {data in
             var audios: [Audio] = []
             for material in data.materials {
@@ -52,6 +53,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                 )
                 audios.append(audio)
             }
+            
             //audioList.audios = audios
             DispatchQueue.main.async {
                 audioData.audios = audios

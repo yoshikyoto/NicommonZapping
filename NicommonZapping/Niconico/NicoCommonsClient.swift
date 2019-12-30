@@ -4,16 +4,42 @@ public class NicoCommonsClient {
     let urlSession: URLSession
     let queryBuilder: QueryBuilder
     let jsonDecoder: JSONDecoder
+    let xmlParser: NicoXmlParser
     
     public init(
         urlSession: URLSession = URLSession.shared,
         queryBuilder: QueryBuilder = QueryBuilder(),
-        jsonDecoder: JSONDecoder = JSONDecoder()
+        jsonDecoder: JSONDecoder = JSONDecoder(),
+        xmlParser: NicoXmlParser = NicoXmlParser()
     ) {
         self.urlSession = urlSession
         self.queryBuilder = queryBuilder
         self.jsonDecoder = jsonDecoder
         self.jsonDecoder.dateDecodingStrategy = .iso8601
+        self.xmlParser = xmlParser
+    }
+    
+    public func login() {
+        print("login します")
+        var urlComponents = URLComponents(
+            string: "https://secure.nicovideo.jp/secure/login"
+        )!
+        let mail = SettingData.shared.email
+        let password = SettingData.shared.password
+        print(mail)
+        print(password)
+        let formData = "mail=\(mail)&password=\(password)&site=nicobox"
+        var request = URLRequest(url: urlComponents.url!)
+        request.httpMethod = "POST"
+        request.httpBody = formData.data(using: .utf8)!
+        let task = self.urlSession.dataTask(with: request) { (data, urlResponse, error) in
+            guard let data = data else {
+                // TODO エラー処理
+                return
+            }
+            
+        }
+        task.resume()
     }
     
     public func searchAudio(
