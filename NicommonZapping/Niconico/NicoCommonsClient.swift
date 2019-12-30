@@ -19,31 +19,58 @@ public class NicoCommonsClient {
         self.xmlParser = xmlParser
     }
     
-    public func login() {
-        print("login します")
+    public func login(
+        onSuccess: @escaping (String) -> Void,
+        onFail: @escaping () -> Void
+    ) {
         let urlComponents = URLComponents(
             string: "https://secure.nicovideo.jp/secure/login"
         )!
+        // 保存されているemailとpasswordをとってくる
         let mail = SettingData.shared.email
         let password = SettingData.shared.password
-        // print(mail)
-        // print(password)
         let formData = "mail=\(mail)&password=\(password)&site=nicobox"
+
+        // リクエストを生成
         var request = URLRequest(url: urlComponents.url!)
         request.httpMethod = "POST"
         request.httpBody = formData.data(using: .utf8)!
+        
         let task = self.urlSession.dataTask(with: request) { (data, urlResponse, error) in
             guard let data = data else {
-                // TODO エラー処理
+                // レスポンスが返ってこなかった
+                onFail()
                 return
             }
             guard let userSession = self.xmlParser.getUserSession(data: data) else {
-                // TODO エラー処理
-                // 正規表現にマッチするものがなかった場合
+                // レスポンスは返ってきたが何かおかしい
+                // ログイン的なかったなど
+                onFail()
                 return
             }
+            // セッションが取れた場合
+            onSuccess(userSession)
         }
         task.resume()
+    }
+    
+    /// userSessionを取得し直し、SettingDataの値を更新した上でそのuserSessionを返す
+    public func refreshUserSession() -> String {
+        let semaphore = DispatchSemaphore(value: 0)
+        self.login(onSuccess: {userSession in
+            SettingData.shared.userSession = userSession
+            semaphore.signal()
+        }, onFail: { () in
+            print("login failed")
+            semaphore.signal()
+        })
+        _ = semaphore.wait(timeout: DispatchTime.distantFuture)
+        return SettingData.shared.userSession
+    }
+    
+    /// idを渡すとその素材のダウンロードURLを返す
+    public func getDownloadUrl(id: Int) -> URLComponents {
+        return URLComponents(string: "https://deliver.commons.nicovideo.jp/download/\(id)")!
     }
     
     public func searchAudio(

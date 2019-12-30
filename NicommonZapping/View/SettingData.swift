@@ -1,6 +1,6 @@
 import Foundation
 
-/// 設定を保存する
+/// ログイン情報などの設定を保存する
 final class SettingData: ObservableObject {
     // UserDefault から値をとってくる
     @Published var email: String = SettingRepository.shared.getEmail() {
@@ -13,6 +13,12 @@ final class SettingData: ObservableObject {
     @Published var password: String = SettingRepository.shared.getPassword() {
         didSet {
             SettingRepository.shared.setPassword(password: self.password)
+        }
+    }
+    
+    @Published var userSession: String = SettingRepository.shared.getUserSession() {
+        didSet {
+            SettingRepository.shared.setUserSession(userSession: self.userSession)
         }
     }
     
@@ -58,5 +64,13 @@ class SettingRepository {
     
     public func setPassword(password: String) {
         self.userDefaults.set(password, forKey: "password")
+    }
+    
+    public func setUserSession(userSession: String) {
+        self.userDefaults.set(userSession, forKey: "userSession")
+    }
+    
+    public func getUserSession() -> String {
+        return self.getString(key: "userSession")
     }
 }

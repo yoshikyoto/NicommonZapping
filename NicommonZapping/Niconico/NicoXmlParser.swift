@@ -22,9 +22,6 @@ public class NicoXmlParser {
             return nil
         }
         
-        print(matched.range.location)
-        print(matched.range.length)
-        print(str)
         // <session_key> の 13 文字を除く
         let from = str.index(str.startIndex, offsetBy: matched.range.location + 13)
         // </session_key> の 14 文字と、なぜか1文字長くなるので15文字引く

@@ -24,7 +24,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         }
 
         let commons = NicoCommonsClient()
-        commons.login()
         commons.searchAudio(onSuccess: {data in
             var audios: [Audio] = []
             for material in data.materials {
@@ -36,13 +35,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                 // https://deliver.commons.nicovideo.jp/download/nc208577
                 //  - ログインが必要
                 //  - mp3とかwavとかが降ってくる
-                var urlComponents = URLComponents(string: "https://deliver.commons.nicovideo.jp/download/nc208577")!
-                urlComponents.queryItems = [
-                    URLQueryItem(name: "cid", value: String(material.id)),
-                    // TODO tsの値をちゃんと設定する
-                    URLQueryItem(name: "ts", value: "20191228103003")
-                ]
-                
+                var urlComponents = commons.getDownloadUrl(id: material.id)
                 let audio = Audio(
                     id: material.id,
                     globalId: material.globalId,
@@ -54,8 +47,15 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             
             //audioList.audios = audios
             DispatchQueue.main.async {
+                // audiosをリストに表示
                 audioData.audios = audios
                 let selectedAudio = audios[0]
+                print("play")
+                let playerItem = AVPlayerItem(url: selectedAudio.url)
+                let player = AVPlayer(playerItem: playerItem)
+                player.play()
+                print("may be playing")
+                // let player = try! AVAudioPlayer(contentsOf: selectedAudio.url)
             }
         })
     }
