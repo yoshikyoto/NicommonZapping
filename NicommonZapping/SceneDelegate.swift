@@ -35,7 +35,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                 // https://deliver.commons.nicovideo.jp/download/nc208577
                 //  - ログインが必要
                 //  - mp3とかwavとかが降ってくる
-                var urlComponents = commons.getDownloadUrl(id: material.id)
+                var urlComponents = commons.getDownloadUrl(material: material)
                 let audio = Audio(
                     id: material.id,
                     globalId: material.globalId,
@@ -52,29 +52,46 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                 let selectedAudio = audios[0]
                 
                 print("http cookie storage")
-                let cookies = HTTPCookieStorage.shared.cookies // : [HTTPCookie]
-                let values = HTTPCookie.requestHeaderFields(with: cookies!)
-                
+                // ユーザーセッションを新しく取得する
                 let userSession = commons.refreshUserSession()
+                print("userSession is")
                 print(userSession)
-                let cookie = HTTPCookie.cookies(
-                    withResponseHeaderFields: ["Cookie": "user_session=\(userSession)"],
+                
+                // cookieにユーザーセッションを追加する
+                // set-cookie の cookie を作成
+                let cookie = "user_session=\(userSession);Secure"
+                print("set cookie:")
+                print(cookie)
+                let cookieHeaderField = ["Set-Cookie": cookie]
+                let cookies = HTTPCookie.cookies(
+                    withResponseHeaderFields: cookieHeaderField,
                     for: selectedAudio.url
                 )
-                print(cookie)
-                let requestHeaderFields = HTTPCookie.requestHeaderFields(with: cookie)
-                let asset = AVURLAsset(
-                    url: selectedAudio.url,
-                    options: ["AVURLAssetHTTPHeaderFieldsKey": values]
+                print("current cookies are" )
+                print(cookies)
+                // セットする
+                HTTPCookieStorage.shared.setCookies(
+                    cookies,
+                    for: selectedAudio.url,
+                    mainDocumentURL: selectedAudio.url
                 )
-                print("requestHeaderFields")
-                print(requestHeaderFields)
-                print("asset")
-                print(asset)
-                let playerItem = AVPlayerItem(asset: asset)
-                var player = AVPlayer(playerItem: playerItem)
+
+                print("play")
+                print(selectedAudio.url)
+                
+                print("shared cookie")
+                print(HTTPCookieStorage.shared.cookies)
+                
+                /*
+                let asset = AVURLAsset(url: selectedAudio.url)
+                let item = AVPlayerItem(asset: asset)
+                let player = AVPlayer(playerItem: item)
+                player.play()
+ */
+                let player = try! AVAudioPlayer(contentsOf: selectedAudio.url)
+                // let playerItem = AVPlayerItem(asset: asset)
+                // var player = AVPlayer(playerItem: playerItem)
                 // player.play()
-                // let player = try! AVAudioPlayer(contentsOf: selectedAudio.url)
             }
         })
     }

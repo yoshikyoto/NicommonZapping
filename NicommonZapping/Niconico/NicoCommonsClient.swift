@@ -69,8 +69,10 @@ public class NicoCommonsClient {
     }
     
     /// idを渡すとその素材のダウンロードURLを返す
-    public func getDownloadUrl(id: Int) -> URLComponents {
-        return URLComponents(string: "https://deliver.commons.nicovideo.jp/download/\(id)")!
+    public func getDownloadUrl(material: NicoCommonsMaterial) -> URLComponents {
+        return URLComponents(
+            string: "https://deliver.commons.nicovideo.jp/download/\(material.globalId)"
+        )!
     }
     
     public func searchAudio(

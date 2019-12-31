@@ -6,6 +6,7 @@ target 'NicommonZapping' do
   use_frameworks!
 
   # Pods for NicommonZapping
+  pod 'Erik'
 
   target 'NicommonZappingTests' do
     inherit! :search_paths

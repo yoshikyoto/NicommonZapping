@@ -1,2 +1,3 @@
 ${PODS_ROOT}/Target Support Files/Pods-NicommonZapping-NicommonZappingUITests/Pods-NicommonZapping-NicommonZappingUITests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Erik/Erik.framework
 ${BUILT_PRODUCTS_DIR}/Kanna/Kanna.framework
