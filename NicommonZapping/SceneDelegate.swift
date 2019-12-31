@@ -50,11 +50,30 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                 // audiosをリストに表示
                 audioData.audios = audios
                 let selectedAudio = audios[0]
-                print("play")
-                let playerItem = AVPlayerItem(url: selectedAudio.url)
-                let player = AVPlayer(playerItem: playerItem)
-                player.play()
-                print("may be playing")
+                
+                print("http cookie storage")
+                let cookies = HTTPCookieStorage.shared.cookies // : [HTTPCookie]
+                let values = HTTPCookie.requestHeaderFields(with: cookies!)
+                
+                let userSession = commons.refreshUserSession()
+                print(userSession)
+                let cookie = HTTPCookie.cookies(
+                    withResponseHeaderFields: ["Cookie": "user_session=\(userSession)"],
+                    for: selectedAudio.url
+                )
+                print(cookie)
+                let requestHeaderFields = HTTPCookie.requestHeaderFields(with: cookie)
+                let asset = AVURLAsset(
+                    url: selectedAudio.url,
+                    options: ["AVURLAssetHTTPHeaderFieldsKey": values]
+                )
+                print("requestHeaderFields")
+                print(requestHeaderFields)
+                print("asset")
+                print(asset)
+                let playerItem = AVPlayerItem(asset: asset)
+                var player = AVPlayer(playerItem: playerItem)
+                // player.play()
                 // let player = try! AVAudioPlayer(contentsOf: selectedAudio.url)
             }
         })
