@@ -1,6 +1,0 @@
-framework module Pods_NicommonZapping {
-  umbrella header "Pods-NicommonZapping-umbrella.h"
-
-  export *
-  module * { export * }
-}
