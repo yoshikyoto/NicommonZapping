@@ -14,8 +14,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         
-        let audioData = AudioData()
-        let audioList = AudioList().environmentObject(audioData)
+        let audioList = AudioList().environmentObject(AudioData.shared)
 
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {
@@ -50,7 +49,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             //audioList.audios = audios
             DispatchQueue.main.async {
                 // audiosをリストに表示
-                audioData.audios = audios
+                AudioData.shared.audios = audios
                 let selectedAudio = audios[0]
                 
                 // print("http cookie storage")

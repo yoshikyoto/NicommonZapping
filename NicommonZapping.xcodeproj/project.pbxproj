@@ -125,6 +125,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		55978C0823BCBAE90059C8C4 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				55FC457323B93501007266CB /* SettingData.swift */,
+				55FC452D23B86DEB007266CB /* AudioData.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
 		55C96E9023BC78DA0021E8EA /* Service */ = {
 			isa = PBXGroup;
 			children = (
@@ -158,6 +167,7 @@
 		55CCD89723B2F2AA007F9F1C /* NicommonZapping */ = {
 			isa = PBXGroup;
 			children = (
+				55978C0823BCBAE90059C8C4 /* State */,
 				55CCD8C823B2FC09007F9F1C /* Niconico */,
 				55CCD89823B2F2AA007F9F1C /* AppDelegate.swift */,
 				55C96E9023BC78DA0021E8EA /* Service */,
@@ -216,8 +226,6 @@
 				55CCD89C23B2F2AA007F9F1C /* ContentView.swift */,
 				55FC452623B83656007266CB /* AudioRow.swift */,
 				55FC452823B849AD007266CB /* AudioList.swift */,
-				55FC452D23B86DEB007266CB /* AudioData.swift */,
-				55FC457323B93501007266CB /* SettingData.swift */,
 				55FC453323B92C41007266CB /* SettingView.swift */,
 			);
 			path = View;

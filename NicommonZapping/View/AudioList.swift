@@ -18,8 +18,18 @@ struct AudioList: View {
         NavigationView {
             VStack {
                 List(self.audioData.audios, id: \.id) { audio in
-                    NavigationLink(destination: ContentView()) {
-                        AudioRow(audio: audio)
+                    HStack {
+                        Image(systemName: "star.fill")
+                            .imageScale(.medium)
+                            .foregroundColor(.yellow)
+                            .frame(width: 44, height: 44)
+                            .onTapGesture {
+                                print("お気に入り")
+                            }
+                        Text(audio.title).onTapGesture {
+                            print(audio.title + "を再生します")
+                            MaterialPlayer.shared.play(id: audio.id)
+                        }
                     }
                 }
                 PlayerView()

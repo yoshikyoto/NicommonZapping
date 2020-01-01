@@ -30,13 +30,14 @@ public final class SettingData: ObservableObject {
     }
 }
 
+/// パスワードやcookieの情報を保存するリポジトリ
 class SettingRepository {
     let userDefaults: UserDefaults
     
     /// シングルトン
     static let shared = SettingRepository()
     
-    /// シングルトンなので init は private
+    /// シングルトンなので外部での初期化禁止
     private init(userDefaults: UserDefaults = UserDefaults.standard) {
         self.userDefaults = userDefaults
     }
