@@ -10,7 +10,7 @@ public class NicoCommonsMaterialDownloader {
         self.player = nil
     }
     
-    public func agree(id: Int, onSuccess: @escaping () -> Void) {
+    public func download(id: Int, onSuccess: @escaping () -> Void) {
         self.accessToDownloadPage(id: id, onSuccess: onSuccess)
     }
     
