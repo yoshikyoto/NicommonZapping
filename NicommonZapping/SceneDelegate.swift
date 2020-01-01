@@ -5,6 +5,8 @@ import SwiftUI
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
+    
+    var player: AVPlayer?
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
@@ -51,47 +53,54 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                 audioData.audios = audios
                 let selectedAudio = audios[0]
                 
-                print("http cookie storage")
+                // print("http cookie storage")
                 // ユーザーセッションを新しく取得する
                 let userSession = commons.refreshUserSession()
-                print("userSession is")
-                print(userSession)
+                // print("userSession is")
+                // print(userSession)
                 
                 // cookieにユーザーセッションを追加する
                 // set-cookie の cookie を作成
                 let cookie = "user_session=\(userSession);Secure"
-                print("set cookie:")
-                print(cookie)
+                // print("set cookie:")
+                // print(cookie)
                 let cookieHeaderField = ["Set-Cookie": cookie]
+                
+                let commonsUrl = URL(string: "https://commons.nicovideo.jp")!
                 let cookies = HTTPCookie.cookies(
                     withResponseHeaderFields: cookieHeaderField,
-                    for: selectedAudio.url
+                    for: commonsUrl
                 )
-                print("current cookies are" )
-                print(cookies)
-                // セットする
                 HTTPCookieStorage.shared.setCookies(
                     cookies,
-                    for: selectedAudio.url,
-                    mainDocumentURL: selectedAudio.url
+                    for: commonsUrl,
+                    mainDocumentURL: commonsUrl
                 )
-
-                print("play")
-                print(selectedAudio.url)
                 
-                print("shared cookie")
-                print(HTTPCookieStorage.shared.cookies)
                 
-                /*
-                let asset = AVURLAsset(url: selectedAudio.url)
-                let item = AVPlayerItem(asset: asset)
-                let player = AVPlayer(playerItem: item)
-                player.play()
- */
-                let player = try! AVAudioPlayer(contentsOf: selectedAudio.url)
-                // let playerItem = AVPlayerItem(asset: asset)
-                // var player = AVPlayer(playerItem: playerItem)
-                // player.play()
+                let deliverUrl = URL(string: "https://deliver.commons.nicovideo.jp")!
+                let deliverCcookies = HTTPCookie.cookies(
+                    withResponseHeaderFields: cookieHeaderField,
+                    for: deliverUrl
+                )
+                HTTPCookieStorage.shared.setCookies(
+                    cookies,
+                    for: deliverUrl,
+                    mainDocumentURL: deliverUrl
+                )
+                
+                // 同意
+                let agreement = NicoCommonsMaterialDownloader()
+                agreement.agree(id: selectedAudio.id) { () in
+                    let storage = MaterialStorage()
+                    print("agreeできたのでファイルを再生します")
+                    guard let url = storage.getUrl(globalId: selectedAudio.globalId) else {
+                        return
+                    }
+                    print(url)
+                    self.player = AVPlayer(url: url)
+                    self.player!.play()
+                }
             }
         })
     }

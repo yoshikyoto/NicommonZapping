@@ -1,7 +1,7 @@
 import Foundation
 
 /// ログイン情報などの設定を保存する
-final class SettingData: ObservableObject {
+public final class SettingData: ObservableObject {
     // UserDefault から値をとってくる
     @Published var email: String = SettingRepository.shared.getEmail() {
         // 値が変更された時は UserDefaultに に保存する
@@ -23,7 +23,7 @@ final class SettingData: ObservableObject {
     }
     
     /// シングルトン
-    static let shared = SettingData()
+    public static let shared = SettingData()
     
     /// シングルトンなので外部での初期化禁止
     private init() {

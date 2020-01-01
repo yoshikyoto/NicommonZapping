@@ -3,12 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		543512A92B226914FDEB5022 /* Pods_NicommonZapping_NicommonZappingUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E80B2180D3D9A655C9EAFF4D /* Pods_NicommonZapping_NicommonZappingUITests.framework */; };
-		550C4F5223BB73D800B3A97A /* NicoCommonsAgreementClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550C4F5123BB73D800B3A97A /* NicoCommonsAgreementClient.swift */; };
+		550C4F5223BB73D800B3A97A /* NicoCommonsMaterialDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550C4F5123BB73D800B3A97A /* NicoCommonsMaterialDownloader.swift */; };
+		55C96E8F23BC3F8A0021E8EA /* MaterialStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C96E8E23BC3F8A0021E8EA /* MaterialStorage.swift */; };
+		55C96E9223BC79500021E8EA /* MaterialPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C96E9123BC79500021E8EA /* MaterialPlayer.swift */; };
 		55CCD89923B2F2AA007F9F1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CCD89823B2F2AA007F9F1C /* AppDelegate.swift */; };
 		55CCD89B23B2F2AA007F9F1C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CCD89A23B2F2AA007F9F1C /* SceneDelegate.swift */; };
 		55CCD89D23B2F2AA007F9F1C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CCD89C23B2F2AA007F9F1C /* ContentView.swift */; };
@@ -52,7 +54,9 @@
 		2E14AAFADBE5B396C0CCE45E /* Pods-NicommonZappingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NicommonZappingTests.release.xcconfig"; path = "Target Support Files/Pods-NicommonZappingTests/Pods-NicommonZappingTests.release.xcconfig"; sourceTree = "<group>"; };
 		2F8C1A3542D7C4FA497C52C7 /* Pods-NicommonZappingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NicommonZappingTests.debug.xcconfig"; path = "Target Support Files/Pods-NicommonZappingTests/Pods-NicommonZappingTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3C26D4CB7C0B7CAFF6709078 /* Pods_NicommonZapping.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NicommonZapping.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		550C4F5123BB73D800B3A97A /* NicoCommonsAgreementClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NicoCommonsAgreementClient.swift; sourceTree = "<group>"; };
+		550C4F5123BB73D800B3A97A /* NicoCommonsMaterialDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NicoCommonsMaterialDownloader.swift; sourceTree = "<group>"; };
+		55C96E8E23BC3F8A0021E8EA /* MaterialStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialStorage.swift; sourceTree = "<group>"; };
+		55C96E9123BC79500021E8EA /* MaterialPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialPlayer.swift; sourceTree = "<group>"; };
 		55CCD89523B2F2AA007F9F1C /* NicommonZapping.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NicommonZapping.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55CCD89823B2F2AA007F9F1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55CCD89A23B2F2AA007F9F1C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -121,6 +125,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		55C96E9023BC78DA0021E8EA /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				55C96E9123BC79500021E8EA /* MaterialPlayer.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		55CCD88C23B2F2AA007F9F1C = {
 			isa = PBXGroup;
 			children = (
@@ -148,6 +160,7 @@
 			children = (
 				55CCD8C823B2FC09007F9F1C /* Niconico */,
 				55CCD89823B2F2AA007F9F1C /* AppDelegate.swift */,
+				55C96E9023BC78DA0021E8EA /* Service */,
 				55CCD89A23B2F2AA007F9F1C /* SceneDelegate.swift */,
 				55CCD89E23B2F2AB007F9F1C /* Assets.xcassets */,
 				55CCD8A323B2F2AB007F9F1C /* LaunchScreen.storyboard */,
@@ -191,7 +204,8 @@
 				55FC457523B9DB0E007266CB /* NicoXmlParser.swift */,
 				55FC452A23B84EDC007266CB /* Audio.swift */,
 				55FC453123B91BF7007266CB /* NicoConfig.swift */,
-				550C4F5123BB73D800B3A97A /* NicoCommonsAgreementClient.swift */,
+				550C4F5123BB73D800B3A97A /* NicoCommonsMaterialDownloader.swift */,
+				55C96E8E23BC3F8A0021E8EA /* MaterialStorage.swift */,
 			);
 			path = Niconico;
 			sourceTree = "<group>";
@@ -463,12 +477,14 @@
 			files = (
 				55FC452923B849AD007266CB /* AudioList.swift in Sources */,
 				55FC453423B92C41007266CB /* SettingView.swift in Sources */,
-				550C4F5223BB73D800B3A97A /* NicoCommonsAgreementClient.swift in Sources */,
+				55C96E9223BC79500021E8EA /* MaterialPlayer.swift in Sources */,
+				550C4F5223BB73D800B3A97A /* NicoCommonsMaterialDownloader.swift in Sources */,
 				55CCD89923B2F2AA007F9F1C /* AppDelegate.swift in Sources */,
 				55FC453223B91BF7007266CB /* NicoConfig.swift in Sources */,
 				55FC452723B83657007266CB /* AudioRow.swift in Sources */,
 				55CCD89B23B2F2AA007F9F1C /* SceneDelegate.swift in Sources */,
 				55CCD8CA23B2FC25007F9F1C /* NicoCommonsClient.swift in Sources */,
+				55C96E8F23BC3F8A0021E8EA /* MaterialStorage.swift in Sources */,
 				55CCD89D23B2F2AA007F9F1C /* ContentView.swift in Sources */,
 				55FC457623B9DB0E007266CB /* NicoXmlParser.swift in Sources */,
 				55FC452E23B86DEB007266CB /* AudioData.swift in Sources */,
