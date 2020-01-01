@@ -1,5 +1,14 @@
 import SwiftUI
 import UIKit
+import AVKit
+
+struct PlayerView: View {
+    var body: some View {
+        HStack {
+            Text("Player")
+        }
+    }
+}
 
 struct AudioList: View {
     @EnvironmentObject var audioData: AudioData
@@ -7,26 +16,30 @@ struct AudioList: View {
     
     var body: some View {
         NavigationView {
-            List(self.audioData.audios, id: \.id) { audio in
-                NavigationLink(destination: ContentView()) {
-                    AudioRow(audio: audio)
+            VStack {
+                List(self.audioData.audios, id: \.id) { audio in
+                    NavigationLink(destination: ContentView()) {
+                        AudioRow(audio: audio)
+                    }
                 }
+                PlayerView()
+                    
+                // NavigationViewにタイトルをつける
+                // NavigationView{} の中に書くので注意
+                .navigationBarTitle(Text("音声"))
+                    
+                // NavigationView の右上にボタンを配置する
+                // action と中身を必ず設定しなければならない
+                .navigationBarItems(trailing: Button(action: {
+                    // クリックした時のアクション
+                    self.isShowingSettingModal.toggle()
+                }){
+                    // ボタンの文字
+                    Text("設定")
+                }.sheet(isPresented: self.$isShowingSettingModal) {
+                    SettingView().environmentObject(SettingData.shared)
+                })
             }
-            // NavigationViewにタイトルをつける
-            // NavigationView{} の中に書くので注意
-            .navigationBarTitle(Text("音声"))
-                
-            // NavigationView の右上にボタンを配置する
-            // action と中身を必ず設定しなければならない
-            .navigationBarItems(trailing: Button(action: {
-                // クリックした時のアクション
-                self.isShowingSettingModal.toggle()
-            }){
-                // ボタンの文字
-                Text("設定")
-            }.sheet(isPresented: self.$isShowingSettingModal) {
-                SettingView().environmentObject(SettingData.shared)
-            })
         }
     }
 }

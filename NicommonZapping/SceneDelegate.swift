@@ -6,7 +6,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
     
-    var player: MaterialPlayer = MaterialPlayer()
+    var player: MaterialPlayer = MaterialPlayer.shared
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
@@ -16,7 +16,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let audioData = AudioData()
         let audioList = AudioList().environmentObject(audioData)
-        self.player = MaterialPlayer()
 
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {
@@ -85,13 +84,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                     for: deliverUrl
                 )
                 HTTPCookieStorage.shared.setCookies(
-                    cookies,
+                    deliverCcookies,
                     for: deliverUrl,
                     mainDocumentURL: deliverUrl
                 )
                 
-                // 同意
-                let agreement = NicoCommonsMaterialDownloader()
                 self.player.play(id: selectedAudio.id)
                 /*
                 agreement.agree(id: selectedAudio.id) { () in

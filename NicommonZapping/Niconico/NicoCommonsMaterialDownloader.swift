@@ -69,7 +69,7 @@ public class NicoCommonsMaterialDownloader {
             
             // 保存する
             let storage = MaterialStorage()
-            let audioUrl = storage.save(data: data, globalId: globalId, filename: filename)
+            storage.save(data: data, globalId: globalId, filename: filename)
             onSuccess()
         }
         task.resume()

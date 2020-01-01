@@ -7,9 +7,10 @@ public class MaterialPlayer {
     let downloader: NicoCommonsMaterialDownloader
     var player: AVPlayer?
     
-    // TODO シングルトン化
+    /// シングルトン
+    public static let shared = MaterialPlayer()
     
-    public init (
+    private init (
         storage: MaterialStorage = MaterialStorage(),
         downloader: NicoCommonsMaterialDownloader = NicoCommonsMaterialDownloader()
     ) {
