@@ -19,6 +19,8 @@ struct AudioList: View {
             VStack {
                 List(self.audioData.audios, id: \.id) { audio in
                     HStack {
+                        // Listの中にButtonを置くと領域全部がボタンになってしまうみたいなので
+                        // ImageにonTapGestureをつけている
                         Image(systemName: "star.fill")
                             .imageScale(.medium)
                             .foregroundColor(.yellow)
@@ -26,13 +28,23 @@ struct AudioList: View {
                             .onTapGesture {
                                 print("お気に入り")
                             }
-                        Text(audio.title).onTapGesture {
-                            print(audio.title + "を再生します")
+                        // 再生はList全体に判定があって問題無いのでButtonで実装している
+                        // Buttonのサイズは適当にしているが、
+                        // List全体似判定が起こるのは仕様じゃないかもしれない
+                        Button(action: {
+                            print("再生します")
                             MaterialPlayer.shared.play(id: audio.id)
-                        }
+                        }) {
+                            HStack {
+                                Text(audio.title)
+                                Spacer()
+                            }
+                        }// .background(Color.gray) // 見やすくするためのカラー
                     }
                 }
-                PlayerView()
+                    
+                    // TODO プレイヤーを実装する
+                // PlayerView()
                     
                 // NavigationViewにタイトルをつける
                 // NavigationView{} の中に書くので注意

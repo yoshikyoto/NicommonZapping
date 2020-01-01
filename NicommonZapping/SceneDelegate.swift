@@ -87,20 +87,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                     for: deliverUrl,
                     mainDocumentURL: deliverUrl
                 )
-                
-                self.player.play(id: selectedAudio.id)
-                /*
-                agreement.agree(id: selectedAudio.id) { () in
-                    let storage = MaterialStorage()
-                    print("agreeできたのでファイルを再生します")
-                    guard let url = storage.getUrl(globalId: selectedAudio.globalId) else {
-                        return
-                    }
-                    print(url)
-                    self.player = AVPlayer(url: url)
-                    self.player!.play()
-                }
- */
             }
         })
     }

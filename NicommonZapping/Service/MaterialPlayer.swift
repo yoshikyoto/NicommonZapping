@@ -16,6 +16,7 @@ public class MaterialPlayer {
     ) {
         self.storage = storage
         self.downloader = downloader
+        try! AVAudioSession.sharedInstance().setCategory(.ambient, mode: .default)
     }
     
     public func play(id: Int) {
