@@ -2,10 +2,14 @@ import SwiftUI
 import UIKit
 import AVKit
 
+
 struct PlayerView: View {
+    @EnvironmentObject var audioData: AudioData
     var body: some View {
         HStack {
-            Text("Player")
+            TimeView(seconds: audioData.playerCurrentTimeSeconds)
+            Text("/")
+            TimeView(seconds: audioData.playerItemDurationSeconds)
         }
     }
 }
@@ -42,9 +46,7 @@ struct AudioList: View {
                         }// .background(Color.gray) // 見やすくするためのカラー
                     }
                 }
-                    
-                    // TODO プレイヤーを実装する
-                // PlayerView()
+                PlayerView().environmentObject(self.audioData)
                     
                 // NavigationViewにタイトルをつける
                 // NavigationView{} の中に書くので注意

@@ -57,7 +57,7 @@ public class NicoCommonsClient {
     /// userSessionを取得し直し、SettingDataの値を更新した上でそのuserSessionを返す
     public func refreshUserSession() -> String {
         let semaphore = DispatchSemaphore(value: 0)
-        self.login(onSuccess: {userSession in
+        self.login(onSuccess: { userSession in
             SettingData.shared.userSession = userSession
             semaphore.signal()
         }, onFail: { () in
