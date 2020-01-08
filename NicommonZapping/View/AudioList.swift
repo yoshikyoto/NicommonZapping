@@ -62,10 +62,6 @@ struct AudioList: View {
             VStack {
                 List(self.audioData.audios, id: \.id) { audio in
                     HStack {
-                        // Listの中にButtonを置くと領域全部がボタンになってしまうみたいなので
-                        // ImageにonTapGestureをつけている
-                        self.starButton(star: audio.star)
-                        
                         // 再生はList全体に判定があって問題無いのでButtonで実装している
                         // Buttonのサイズは適当にしているが、
                         // List全体似判定が起こるのは仕様じゃないかもしれない
@@ -78,6 +74,11 @@ struct AudioList: View {
                                 Spacer()
                             }
                         }// .background(Color.gray) // 見やすくするためのカラー
+                        
+                        // Listの中にButtonを置くと領域全部がボタンになってしまうみたいなので
+                        // ImageにonTapGestureをつけている
+                        // タップしやすいように右端に設置する
+                        self.starButton(star: audio.star)
                     }
                 }
                 PlayerView().environmentObject(self.audioData)

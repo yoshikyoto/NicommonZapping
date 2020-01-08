@@ -11,6 +11,12 @@ struct SettingView: View {
             Text("パスワード").frame(maxWidth: .infinity, alignment: .leading)
             SecureField("password", text: $data.password)
             
+            Text("niconicoユーザーID: \(self.data.userId)")
+                .frame(maxWidth: .infinity, alignment: .leading)
+            
+            Text("セッション情報").frame(maxWidth: .infinity, alignment: .leading)
+            Text(self.data.userSession).frame(maxWidth: .infinity, alignment: .leading)
+            
             Spacer()
         }
         .padding()

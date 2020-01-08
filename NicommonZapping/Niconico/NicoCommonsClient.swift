@@ -6,6 +6,8 @@ public class NicoCommonsClient {
     let jsonDecoder: JSONDecoder
     let xmlParser: NicoXmlParser
     
+    static let shared = NicoCommonsClient()
+    
     public init(
         urlSession: URLSession = URLSession.shared,
         queryBuilder: QueryBuilder = QueryBuilder(),
@@ -19,6 +21,41 @@ public class NicoCommonsClient {
         self.xmlParser = xmlParser
     }
     
+    public func login(
+        mail: String,
+        password: String,
+        onSuccess: @escaping (String) -> Void,
+        onFail: @escaping (String) -> Void
+    ) {
+        let urlComponents = URLComponents(
+            string: "https://secure.nicovideo.jp/secure/login"
+        )!
+        let formData = "mail=\(mail)&password=\(password)&site=nicobox"
+
+        // リクエストを生成
+        var request = URLRequest(url: urlComponents.url!)
+        request.httpMethod = "POST"
+        request.httpBody = formData.data(using: .utf8)!
+        
+        let task = self.urlSession.dataTask(with: request) { (data, urlResponse, error) in
+            guard let data = data else {
+                // レスポンスが返ってこなかった
+                onFail("ニコニコのサーバーからレスポンスがありませんでした")
+                return
+            }
+            guard let userSession = self.xmlParser.getUserSession(data: data) else {
+                // レスポンスは返ってきたが何かおかしい
+                // ログイン的なかったなど
+                onFail("ニコニコへのログインに失敗しました")
+                return
+            }
+            // セッションが取れた場合
+            onSuccess(userSession)
+        }
+        task.resume()
+    }
+    
+    /// deprecated
     public func login(
         onSuccess: @escaping (String) -> Void,
         onFail: @escaping () -> Void
@@ -52,20 +89,6 @@ public class NicoCommonsClient {
             onSuccess(userSession)
         }
         task.resume()
-    }
-    
-    /// userSessionを取得し直し、SettingDataの値を更新した上でそのuserSessionを返す
-    public func refreshUserSession() -> String {
-        let semaphore = DispatchSemaphore(value: 0)
-        self.login(onSuccess: { userSession in
-            SettingData.shared.userSession = userSession
-            semaphore.signal()
-        }, onFail: { () in
-            print("login failed")
-            semaphore.signal()
-        })
-        _ = semaphore.wait(timeout: DispatchTime.distantFuture)
-        return SettingData.shared.userSession
     }
     
     /// idを渡すとその素材のダウンロードURLを返す

@@ -22,6 +22,12 @@ public final class SettingData: ObservableObject {
         }
     }
     
+    @Published var userId: String = SettingRepository.shared.getUserId() {
+        didSet {
+            SettingRepository.shared.setUserId(userId: userId)
+        }
+    }
+    
     /// シングルトン
     public static let shared = SettingData()
     
@@ -67,11 +73,19 @@ class SettingRepository {
         self.userDefaults.set(password, forKey: "password")
     }
     
+    public func getUserSession() -> String {
+        return self.getString(key: "userSession")
+    }
+    
     public func setUserSession(userSession: String) {
         self.userDefaults.set(userSession, forKey: "userSession")
     }
     
-    public func getUserSession() -> String {
-        return self.getString(key: "userSession")
+    public func getUserId() -> String {
+        return self.getString(key: "userId")
+    }
+    
+    public func setUserId(userId: String) {
+        self.userDefaults.set(userId, forKey: "userId")
     }
 }

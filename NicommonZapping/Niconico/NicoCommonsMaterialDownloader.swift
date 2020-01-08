@@ -32,6 +32,7 @@ public class NicoCommonsMaterialDownloader {
                 print("ダウンロードページを開こうとしてエラー")
                 return
             }
+            print(httpResponse.statusCode)
             self.clickDownloadButton(id: id, onSuccess: onSuccess)
         }
         task.resume()

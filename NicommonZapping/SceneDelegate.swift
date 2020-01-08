@@ -24,7 +24,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             window.makeKeyAndVisible()
         }
 
+        // 各種セットアップ
         NicoConfig.shared.setUp()
+        NicoAccountService.shared.setSessionToCookieStorage()
         
         let commons = NicoCommonsClient()
         commons.searchAudio(onSuccess: {data in
@@ -53,42 +55,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             DispatchQueue.main.async {
                 // audiosをリストに表示
                 AudioData.shared.audios = audios
-                
-                // ユーザーセッションを新しく取得する
-                // TODO 適切な場所に移動する
-                let userSession = commons.refreshUserSession()
-                // print("userSession is")
-                // print(userSession)
-                
-                // cookieにユーザーセッションを追加する
-                // set-cookie の cookie を作成
-                let cookie = "user_session=\(userSession);Secure"
-                // print("set cookie:")
-                // print(cookie)
-                let cookieHeaderField = ["Set-Cookie": cookie]
-                
-                let commonsUrl = URL(string: "https://commons.nicovideo.jp")!
-                let cookies = HTTPCookie.cookies(
-                    withResponseHeaderFields: cookieHeaderField,
-                    for: commonsUrl
-                )
-                HTTPCookieStorage.shared.setCookies(
-                    cookies,
-                    for: commonsUrl,
-                    mainDocumentURL: commonsUrl
-                )
-                
-                
-                let deliverUrl = URL(string: "https://deliver.commons.nicovideo.jp")!
-                let deliverCcookies = HTTPCookie.cookies(
-                    withResponseHeaderFields: cookieHeaderField,
-                    for: deliverUrl
-                )
-                HTTPCookieStorage.shared.setCookies(
-                    deliverCcookies,
-                    for: deliverUrl,
-                    mainDocumentURL: deliverUrl
-                )
             }
         })
     }
