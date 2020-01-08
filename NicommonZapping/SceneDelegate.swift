@@ -24,6 +24,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             window.makeKeyAndVisible()
         }
 
+        NicoConfig.shared.setUp()
+        
         let commons = NicoCommonsClient()
         commons.searchAudio(onSuccess: {data in
             var audios: [Audio] = []
@@ -50,10 +52,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             DispatchQueue.main.async {
                 // audiosをリストに表示
                 AudioData.shared.audios = audios
-                let selectedAudio = audios[0]
                 
-                // print("http cookie storage")
                 // ユーザーセッションを新しく取得する
+                // TODO 適切な場所に移動する
                 let userSession = commons.refreshUserSession()
                 // print("userSession is")
                 // print(userSession)

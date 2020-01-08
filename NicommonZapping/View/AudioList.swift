@@ -2,14 +2,17 @@ import SwiftUI
 import UIKit
 import AVKit
 
-
 struct PlayerView: View {
     @EnvironmentObject var audioData: AudioData
     var body: some View {
-        HStack {
-            TimeView(seconds: audioData.playerCurrentTimeSeconds)
-            Text("/")
-            TimeView(seconds: audioData.playerItemDurationSeconds)
+        ZStack {
+            HStack {
+                Spacer()
+                TimeView(seconds: audioData.playerCurrentTimeSeconds)
+                Text("/")
+                TimeView(seconds: audioData.playerItemDurationSeconds)
+                Spacer().frame(width: 20)
+            }
         }
     }
 }
