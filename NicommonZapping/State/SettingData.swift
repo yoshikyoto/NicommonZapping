@@ -28,6 +28,8 @@ public final class SettingData: ObservableObject {
         }
     }
     
+    @Published var message: String = ""
+    
     /// シングルトン
     public static let shared = SettingData()
     

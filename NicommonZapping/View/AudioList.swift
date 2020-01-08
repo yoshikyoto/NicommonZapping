@@ -39,9 +39,11 @@ struct NotStared: View {
 struct AudioList: View {
     @EnvironmentObject var audioData: AudioData
     @State private var isShowingSettingModal = false
+    @State private var isStaring = false
+    @State private var starComment = ""
     
-    func starButton(star: Star) -> AnyView {
-        switch star {
+    func starButton(audio: Audio) -> AnyView {
+        switch audio.star {
         case .stared:
             return AnyView(Stared().onTapGesture {
                 print("お気に入り解除")
@@ -49,6 +51,7 @@ struct AudioList: View {
         case .notStared:
             return AnyView(NotStared().onTapGesture {
                 print("お気に入り")
+                StarRepository.shared.save(materialId: audio.id)
             })
         case .pending:
             return AnyView(NotStared().onTapGesture {
@@ -78,7 +81,7 @@ struct AudioList: View {
                         // Listの中にButtonを置くと領域全部がボタンになってしまうみたいなので
                         // ImageにonTapGestureをつけている
                         // タップしやすいように右端に設置する
-                        self.starButton(star: audio.star)
+                        self.starButton(audio: audio)
                     }
                 }
                 PlayerView().environmentObject(self.audioData)

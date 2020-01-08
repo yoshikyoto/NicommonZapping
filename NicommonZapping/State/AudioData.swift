@@ -2,7 +2,7 @@ import SwiftUI
 import Combine
 
 /// オーディオに関する状態を管理するクラス
-final class AudioData: ObservableObject {
+public final class AudioData: ObservableObject {
     @Published var audios: [Audio] = []
     @Published var nowPlayngGlobalId: String = ""
     /// 今何秒地点を再生しているか

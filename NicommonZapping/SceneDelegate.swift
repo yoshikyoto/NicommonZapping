@@ -27,6 +27,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // 各種セットアップ
         NicoConfig.shared.setUp()
         NicoAccountService.shared.setSessionToCookieStorage()
+        // NicoAccountService.shared.login()
         
         let commons = NicoCommonsClient()
         commons.searchAudio(onSuccess: {data in

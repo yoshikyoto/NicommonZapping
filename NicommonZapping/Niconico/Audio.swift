@@ -6,7 +6,7 @@ struct Audio {
     let globalId: String
     let title: String
     let url: URL
-    let star: Star
+    var star: Star
 }
 
 enum Star {
