@@ -43,7 +43,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                     id: material.id,
                     globalId: material.globalId,
                     title: material.title,
-                    url: urlComponents.url! // エラーにはならないはず
+                    url: urlComponents.url!,  // エラーにはならないはず
+                    star: .notStared
                 )
                 audios.append(audio)
             }

@@ -28,6 +28,7 @@ struct AudioList: View {
                     HStack {
                         // Listの中にButtonを置くと領域全部がボタンになってしまうみたいなので
                         // ImageにonTapGestureをつけている
+                        
                         Image(systemName: "star.fill")
                             .imageScale(.medium)
                             .foregroundColor(.yellow)
