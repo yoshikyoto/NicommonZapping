@@ -55,42 +55,6 @@ public class NicoCommonsClient {
         task.resume()
     }
     
-    /// deprecated
-    public func login(
-        onSuccess: @escaping (String) -> Void,
-        onFail: @escaping () -> Void
-    ) {
-        let urlComponents = URLComponents(
-            string: "https://secure.nicovideo.jp/secure/login"
-        )!
-        // 保存されているemailとpasswordをとってくる
-        let mail = SettingData.shared.email
-        let password = SettingData.shared.password
-        let formData = "mail=\(mail)&password=\(password)&site=nicobox"
-
-        // リクエストを生成
-        var request = URLRequest(url: urlComponents.url!)
-        request.httpMethod = "POST"
-        request.httpBody = formData.data(using: .utf8)!
-        
-        let task = self.urlSession.dataTask(with: request) { (data, urlResponse, error) in
-            guard let data = data else {
-                // レスポンスが返ってこなかった
-                onFail()
-                return
-            }
-            guard let userSession = self.xmlParser.getUserSession(data: data) else {
-                // レスポンスは返ってきたが何かおかしい
-                // ログイン的なかったなど
-                onFail()
-                return
-            }
-            // セッションが取れた場合
-            onSuccess(userSession)
-        }
-        task.resume()
-    }
-    
     /// idを渡すとその素材のダウンロードURLを返す
     public func getDownloadUrl(material: NicoCommonsMaterial) -> URLComponents {
         return URLComponents(
