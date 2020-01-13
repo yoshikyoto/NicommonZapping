@@ -35,6 +35,12 @@ struct NotStared: View {
     }
 }
 
+struct Pending: View {
+    var body: some View {
+        return Indicator().frame(width: 44, height: 44)
+    }
+}
+
 
 struct AudioList: View {
     @EnvironmentObject var audioData: AudioData
@@ -56,9 +62,7 @@ struct AudioList: View {
                 print("お気に入り解除")
             })
         case .pending:
-            return AnyView(NotStared().onTapGesture {
-                print("pending")
-            })
+            return AnyView(Pending())
         }
     }
     
