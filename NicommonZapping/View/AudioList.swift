@@ -49,7 +49,8 @@ struct AudioDownloading: View {
 
 struct AudioPlaying: View {
     var body: some View {
-        return Text("p").frame(width: 44, height: 44)
+        return Text("▶").frame(width: 44, height: 44)
+            .foregroundColor(.gray)
     }
 }
 
