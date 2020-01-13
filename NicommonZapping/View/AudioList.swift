@@ -43,15 +43,17 @@ struct AudioList: View {
     @State private var starComment = ""
     
     func starButton(audio: Audio) -> AnyView {
-        switch audio.star {
-        case .stared:
-            return AnyView(Stared().onTapGesture {
-                print("お気に入り解除")
-            })
-        case .notStared:
+        guard let star = audioData.stars[audio.id] else {
             return AnyView(NotStared().onTapGesture {
                 print("お気に入り")
                 StarRepository.shared.save(materialId: audio.id)
+            })
+        }
+        
+        switch star {
+        case .stared:
+            return AnyView(Stared().onTapGesture {
+                print("お気に入り解除")
             })
         case .pending:
             return AnyView(NotStared().onTapGesture {

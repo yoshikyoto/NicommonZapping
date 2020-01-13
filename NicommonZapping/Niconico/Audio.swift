@@ -6,9 +6,5 @@ struct Audio {
     let globalId: String
     let title: String
     let url: URL
-    var star: Star
 }
 
-enum Star {
-    case stared, notStared, pending
-}

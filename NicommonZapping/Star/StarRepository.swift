@@ -76,23 +76,16 @@ public class StarRepository {
     }
     
     private func processResponse(response: StarResponse) {
-        // print(response)
         let staredIds = response.materials.map { $0.id }
-        // print(staredIds)
-        var audios: [Audio] = []
-        for var audio in self.audioData.audios {
-            if staredIds.contains(audio.id) {
-                audio.star = .stared
-            } else {
-                audio.star = .notStared
+        print(staredIds)
+        for (id, _) in audioData.stars {
+            if staredIds.contains(id) {
+                audioData.stars.removeValue(forKey: id)
             }
-            print(audio)
-            // 何故かこれができんくてわからん
-            // audios = audios.append(audio)
         }
-        
-        // これバックグラウンドスレッドなのでなんとかしたほうが良い
-        // self.audioData.audios = audios
+        for staredId in staredIds {
+            self.audioData.stars[staredId] = .stared
+        }
     }
 }
 

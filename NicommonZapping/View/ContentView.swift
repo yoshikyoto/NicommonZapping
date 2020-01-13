@@ -1,6 +1,7 @@
 import SwiftUI
 import MapKit
 
+/// unused
 struct ContentView: View {
     var body: some View {
         VStack {

@@ -41,13 +41,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                 // https://deliver.commons.nicovideo.jp/download/nc208577
                 //  - ログインが必要
                 //  - mp3とかwavとかが降ってくる
-                var urlComponents = commons.getDownloadUrl(material: material)
+                let urlComponents = commons.getDownloadUrl(material: material)
                 let audio = Audio(
                     id: material.id,
                     globalId: material.globalId,
                     title: material.title,
-                    url: urlComponents.url!,  // エラーにはならないはず
-                    star: .notStared
+                    url: urlComponents.url!  // エラーにはならないはず
                 )
                 audios.append(audio)
             }
