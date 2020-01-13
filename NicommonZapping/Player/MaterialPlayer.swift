@@ -32,6 +32,9 @@ public class MaterialPlayer {
             state.playerItemDurationSeconds = 0
             return
         }
+        // たまに Int に変換するときにエラーになることがある
+        // 変なタイミングでこれが呼ばれるとIntに変換できない値になることがある？
+        print(durationSeconds)
         state.playerItemDurationSeconds = Int(durationSeconds)
     }
     

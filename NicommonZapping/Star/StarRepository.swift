@@ -39,7 +39,7 @@ public class StarRepository {
         // リクエストを送る
         let task = self.urlSession.dataTask(with: request) { (data, urlResponse, error) in
             guard let data = data else {
-                print("herokuからのレスポンスのデータが空っぽ")
+                AlertManager.shared.showAlert(message: "お気に入りデータベースからのレスポンスが空です。接続に失敗した可能性が高いです。")
                 return
             }
             do {
@@ -49,7 +49,7 @@ public class StarRepository {
                 )
                 self.processResponse(response: response)
             } catch {
-                print("herokuレスポンスのパースエラー")
+                AlertManager.share.showAlert(message: "お気に入りデータベースからのレスポンスがJSON形式ではありませんでした。")
                 return
             }
         }

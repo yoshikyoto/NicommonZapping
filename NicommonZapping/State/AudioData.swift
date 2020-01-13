@@ -10,7 +10,8 @@ public final class AudioData: ObservableObject {
     @Published var playerItemDurationSeconds: Int = 0
     /// お気に入り情報 keyはid
     @Published var stars: [Int: Star] = [:]
-    /// ポップアップアラートで表示する文言
+    /// ポップアップアラートで表示する文言など
+    @Published var isShowingAlert: Bool = false
     @Published var alertMessage: String = ""
     /// 再生中の曲
     @Published var playingGlobalId: String = ""

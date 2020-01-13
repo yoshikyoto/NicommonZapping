@@ -28,8 +28,7 @@ public class MaterialStorage {
             print(url)
             return url
         } catch {
-            // TODO 保存失敗
-            print("ファイルの保存に失敗しました")
+            AlertManager.shared.showAlert(message: "コモンズ素材ファイルの保存に失敗しました。")
             return nil
         }
     }

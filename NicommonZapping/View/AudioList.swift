@@ -17,6 +17,7 @@ struct PlayerView: View {
     }
 }
 
+/// お気に入りされているときの星
 struct Stared: View {
     var body: some View {
         Image(systemName: "star.fill")
@@ -26,6 +27,7 @@ struct Stared: View {
     }
 }
 
+/// まだお気に入りされていないときの灰色の星
 struct NotStared: View {
     var body: some View {
         Image(systemName: "star.fill")
@@ -35,18 +37,21 @@ struct NotStared: View {
     }
 }
 
+/// くるくる
 struct Pending: View {
     var body: some View {
         return Indicator().frame(width: 44, height: 44)
     }
 }
 
+/// オーディオダウンロード中のくるくる
 struct AudioDownloading: View {
     var body: some View {
         return Indicator().frame(width: 44, height: 44)
     }
 }
 
+/// オーディオ再生中の表示
 struct AudioPlaying: View {
     var body: some View {
         return Text("▶").frame(width: 44, height: 44)
@@ -54,12 +59,14 @@ struct AudioPlaying: View {
     }
 }
 
+/// 特にそのオーディオに対してなにもないときの表示
 struct AudioNothing: View {
     var body: some View {
         return Text("").frame(width: 44, height: 44)
     }
 }
 
+/// オーディオ一覧表示のビュー
 struct AudioList: View {
     @EnvironmentObject var audioData: AudioData
     @State private var isShowingSettingModal = false
@@ -92,7 +99,8 @@ struct AudioList: View {
         switch star {
         case .stared:
             return AnyView(Stared().onTapGesture {
-                print("お気に入り解除")
+                // アラートの動作確認のためのやつ
+                AlertManager.shared.showAlert(message: "お気に入り解除はまだ実装されていません")
             })
         case .pending:
             return AnyView(Pending())
@@ -116,7 +124,7 @@ struct AudioList: View {
                                 Text(audio.title)
                                 Spacer()
                             }
-                        }// .background(Color.gray) // 見やすくするためのカラー
+                        }
                         
                         // Listの中にButtonを置くと領域全部がボタンになってしまうみたいなので
                         // ImageにonTapGestureをつけている
@@ -142,6 +150,12 @@ struct AudioList: View {
                     SettingView().environmentObject(SettingData.shared)
                 })
             }
+        }
+        .alert(isPresented: self.$audioData.isShowingAlert) {
+            Alert(
+                title: Text("エラー"),
+                message: Text(self.audioData.alertMessage),
+                dismissButton: .default(Text("閉じる")))
         }
     }
 }
