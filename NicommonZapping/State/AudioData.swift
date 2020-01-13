@@ -4,7 +4,6 @@ import Combine
 /// オーディオに関する状態を管理するクラス
 public final class AudioData: ObservableObject {
     @Published var audios: [Audio] = []
-    @Published var nowPlayngGlobalId: String = ""
     /// 今何秒地点を再生しているか
     @Published var playerCurrentTimeSeconds: Int = 0
     /// 再生中の音楽の長さ
@@ -13,6 +12,10 @@ public final class AudioData: ObservableObject {
     @Published var stars: [Int: Star] = [:]
     /// ポップアップアラートで表示する文言
     @Published var alertMessage: String = ""
+    /// 再生中の曲
+    @Published var playingGlobalId: String = ""
+    /// ダウンロード中の曲
+    @Published var downloadingIds: Set<Int> = []
     
     /// シングルトン
     public static let shared = AudioData()

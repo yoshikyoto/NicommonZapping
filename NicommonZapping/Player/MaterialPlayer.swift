@@ -65,6 +65,6 @@ public class MaterialPlayer {
         let url = self.storage.getUrl(globalId: globalId)!
         self.player = AVPlayer(url: url)
         self.player!.play()
-        
+        self.state.playingGlobalId = globalId
     }
 }

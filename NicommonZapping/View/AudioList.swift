@@ -41,6 +41,23 @@ struct Pending: View {
     }
 }
 
+struct AudioDownloading: View {
+    var body: some View {
+        return Indicator().frame(width: 44, height: 44)
+    }
+}
+
+struct AudioPlaying: View {
+    var body: some View {
+        return Text("p").frame(width: 44, height: 44)
+    }
+}
+
+struct AudioNothing: View {
+    var body: some View {
+        return Text("").frame(width: 44, height: 44)
+    }
+}
 
 struct AudioList: View {
     @EnvironmentObject var audioData: AudioData
@@ -48,6 +65,21 @@ struct AudioList: View {
     @State private var isStaring = false
     @State private var starComment = ""
     
+    /// 曲名の前に表示するべきビューを返す
+    func audioPrefix(audio: Audio) -> AnyView {
+        // 再生中の曲
+        if self.audioData.playingGlobalId == audio.globalId {
+            return AnyView(AudioPlaying())
+        }
+        // ダウンロード中の曲
+        if self.audioData.downloadingIds.contains(audio.id) {
+            return AnyView(AudioDownloading())
+        }
+        // それ以外（何も表示しない）
+        return AnyView(AudioNothing())
+    }
+    
+    /// お気に入りボタンの状態を返す
     func starButton(audio: Audio) -> AnyView {
         guard let star = audioData.stars[audio.id] else {
             return AnyView(NotStared().onTapGesture {
@@ -71,6 +103,7 @@ struct AudioList: View {
             VStack {
                 List(self.audioData.audios, id: \.id) { audio in
                     HStack {
+                        self.audioPrefix(audio: audio)
                         // 再生はList全体に判定があって問題無いのでButtonで実装している
                         // Buttonのサイズは適当にしているが、
                         // List全体似判定が起こるのは仕様じゃないかもしれない

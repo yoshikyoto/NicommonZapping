@@ -39,6 +39,7 @@ public class NicoCommonsMaterialDownloader {
     }
     
     private func clickDownloadButton(id: Int, onSuccess: @escaping () -> Void) {
+        AudioData.shared.downloadingIds.insert(id)
         // ここでは id ではなくて globalId （ncつきのやつ）
         // id しか渡されてないので globalId にここで変換している
         let globalId = "nc\(id)"
