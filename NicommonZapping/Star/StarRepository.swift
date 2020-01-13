@@ -23,14 +23,20 @@ public class StarRepository {
     }
     
     public func save(materialId: Int, comment: String = "") {
+        // まずくるくるを表示しておく
+        self.audioData.stars[materialId] = .pending
+        
+        // リクエスト内容を生成
+        let userId = self.setting.userId
         let urlComponents = URLComponents(
-            string: self.urlString + "/api/users/" + self.setting.userId + "/stars"
+            string: self.urlString + "/api/users/\(userId)/stars"
         )!
         var request = URLRequest(url: urlComponents.url!)
         request.httpMethod = "POST"
         let formData = "material_id=\(materialId)&comment=\(comment)"
-        print(formData)
         request.httpBody = formData.data(using: .utf8)!
+        
+        // リクエストを送る
         let task = self.urlSession.dataTask(with: request) { (data, urlResponse, error) in
             guard let data = data else {
                 print("herokuからのレスポンスのデータが空っぽ")
@@ -51,8 +57,10 @@ public class StarRepository {
     }
     
     public func get() {
+        // リクエスト内容を生成
+        let userId = self.setting.userId
         let urlComponents = URLComponents(
-            string: self.urlString + "/api/users/" + self.setting.userId + "/stars"
+            string: self.urlString + "/api/users/\(userId)/stars"
         )!
 
         let request = URLRequest(url: urlComponents.url!)

@@ -29,8 +29,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         NicoAccountService.shared.setSessionToCookieStorage()
         // NicoAccountService.shared.login()
         
-        let commons = NicoCommonsClient()
-        commons.searchAudio(onSuccess: {data in
+        // お気に入り情報は非同期で取得しておいて問題ない
+        StarRepository.shared.get()
+        // コモンズの曲一覧を取得する
+        NicoCommonsClient.shared.searchAudio(onSuccess: {data in
             var audios: [Audio] = []
             for material in data.materials {
                 // サンプル再生
@@ -41,7 +43,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                 // https://deliver.commons.nicovideo.jp/download/nc208577
                 //  - ログインが必要
                 //  - mp3とかwavとかが降ってくる
-                let urlComponents = commons.getDownloadUrl(material: material)
+                let urlComponents = NicoCommonsClient.shared.getDownloadUrl(material: material)
                 let audio = Audio(
                     id: material.id,
                     globalId: material.globalId,
