@@ -22,7 +22,11 @@ public class StarRepository {
         self.audioData = audioData
     }
     
-    public func save(materialId: Int, comment: String = "") {
+    public func save(
+        materialId: Int,
+        title: String,
+        comment: String = ""
+    ) {
         // まずくるくるを表示しておく
         self.audioData.stars[materialId] = .pending
         
@@ -33,7 +37,7 @@ public class StarRepository {
         )!
         var request = URLRequest(url: urlComponents.url!)
         request.httpMethod = "POST"
-        let formData = "material_id=\(materialId)&comment=\(comment)"
+        let formData = "material_id=\(materialId)&comment=\(comment)&title=\(title)"
         request.httpBody = formData.data(using: .utf8)!
         
         // リクエストを送る
@@ -49,7 +53,7 @@ public class StarRepository {
                 )
                 self.processResponse(response: response)
             } catch {
-                AlertManager.share.showAlert(message: "お気に入りデータベースからのレスポンスがJSON形式ではありませんでした。")
+                AlertManager.shared.showAlert(message: "お気に入りデータベースからのレスポンスがJSON形式ではありませんでした。")
                 return
             }
         }

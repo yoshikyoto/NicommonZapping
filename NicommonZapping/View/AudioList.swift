@@ -92,7 +92,10 @@ struct AudioList: View {
         guard let star = audioData.stars[audio.id] else {
             return AnyView(NotStared().onTapGesture {
                 print("お気に入り")
-                StarRepository.shared.save(materialId: audio.id)
+                StarRepository.shared.save(
+                    materialId: audio.id,
+                    title: audio.title
+                )
             })
         }
         
